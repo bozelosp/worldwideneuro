@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162193606-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-162193606-2');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="World Wide Neuro">
+	<meta name="keywords" content="worldwideneuro,world wide neuroscience,neurotheory,theoretical neuroscience,computational neuroscience,neuroscience seminars">
+	<meta name="author" content="Panos Bozelos">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:title" content="World Wide Neuroscience">
+	<meta property="og:description" content="Online Neuroscience Seminars">
+	<meta property="og:image" content="https://www.worldwideneuro.com/thumbnail.jpg">
+	<meta property="og:url" content="https://www.worldwideneuro.com/index.html">
+	<title>World Wide Neuro</title>
+	<link rel="stylesheet" type="text/css" href="fonts.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="tailwind.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="pseudo.css" media="screen"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	
+</head>
+
+<style type="text/css">
+
+.col-count-1 {
+	-moz-column-count: 1;
+	column-count: 1
+}
+
+.col-count-2 {
+	-moz-column-count: 2;
+	column-count: 2
+}
+
+.col-gap-md {
+	-moz-column-gap: 4rem;
+	column-gap: 4rem
+}
+
+@media (min-width:500px) {
+	#first-column, #second-column{
+		padding: 0.125rem;
+	}
+	.xsm\:p-8 {
+		padding: 2rem;
+	}
+}
+
+@media (min-width:640px) {
+	#first-column, #second-column{
+		padding: 0.125rem;
+	}
+	html {
+		font-size: calc(13.17647px + (282.3529vw - 1807.05856px)/193);
+	}
+}
+
+@media (min-width:830px) {
+	#first-column, #second-column{
+		padding: 0.25rem;
+	}
+	.md\:col-count-2 {
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+	html {
+		font-size: calc(12.288px + (371.2vw - 3092.096px)/246.5);
+	}
+}
+
+@media (min-width:1020px) {
+	#first-column, #second-column{
+		padding: 0.5rem;
+	}
+	.md\:col-count-2 {
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width:2400px) {
+	#first-column, #second-column{
+		padding: 2rem;
+	}
+	.xl\:mt-32 {
+		margin-top: 8rem
+	}
+
+	.xl\:col-count-2 {
+		-moz-column-count: 2;
+		column-count: 2
+	}
+}
+
+html {
+	-webkit-text-size-adjust: 100%
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-size: 13.176471px;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: inherit;
+	color: #008dd6;
+}
+
+ul {
+	list-style: none;
+	padding: 0
+}
+
+*,:after,:before {
+	box-sizing: border-box;
+	border: 0 solid #e2e8f0;
+}
+
+p {
+	margin:0.1rem;
+}
+
+svg {
+	overflow: visible;
+}
+
+/*h1,h2,h3,p,ul {
+	margin: 0
+}
+
+ul {
+	list-style: none;
+	padding: 0
+}
+
+h1,h2,h3 {
+	font-size: inherit;
+	font-weight: inherit
+}*/
+
+.container {
+	position: relative;
+	text-align: center;
+	color: white;
+	max-width: 100%;
+}
+.container-centered {
+	position: relative;
+	text-align: center;
+	color: white;
+	max-width: 400px;
+}
+
+#tags-container{
+	position: relative;
+	align-items: center;
+	padding-top: 1.5rem;
+
+}
+
+@media (min-width:820px) {
+	#tags-container{
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+.website-title{
+	z-index: 999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-53.5%, -142%);
+
+	font-family: 'FiraGO', sans-serif;
+	
+	letter-spacing: 0.235vw;
+	
+	font-style: italic;
+	font-weight:700;
+	font-size: min(3.125vw, 36px);
+	
+	text-shadow: 2.5px 2.5px 6px #000000;
+	
+	text-align: center;
+	color: white;
+}
+
+@media (min-width:1020px) {
+	#banner-element {
+		padding-top: 0.5rem;
+	}
+}
+
+.banner {
+	max-width:80%;
+	height:auto;
+	position: relative;	
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+#follow-us-on-twitter {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	
+	top: 0.75rem;
+	padding-bottom: 0.25rem;
+
+	margin: 0 auto;
+	width: 100%;
+}
+
+.section-element {
+	padding-top: 0.45rem;
+	padding-bottom: 0.2rem;
+}
+
+@media (min-width:1020px) {
+	.section-element {
+		padding-top: 0.575rem;
+	}
+}
+
+#detected-timezone {
+	padding-top: 0.75rem;
+	font-size: 1.2rem;
+	color: #718096;
+}
+
+#selected-timezone {
+	margin-bottom: 0.75rem;
+	position: relative;
+	height: 1.85rem;
+	vertical-align: middle;
+
+	background-color: #9ed8d5;
+	color: white;
+	font-weight: 600;
+	font-size: 1.2rem;
+	max-width: 13.5rem;
+}
+
+@media (min-width:1020px) {
+	.button {
+		font-size: 1.075rem;
+		margin-left: 0.375rem;
+		margin-right: 0.375rem;
+		line-height: 1.6;
+	}
+}
+
+.seminar-element {
+	
+}
+
+.seminar-date {
+	margin-top: 0.95rem;
+	color: #4a5568;
+	font-weight: 600; 
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.live-status {
+	color: #4a5568;
+}
+
+.teleconf-info, .passwd, .calendar-event {
+	color: #4a5568;
+	margin-bottom: 0.5rem;
+	font-size: 1.15rem;
+}
+
+.speaker-name {
+	color: #68778d;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	font-size: 1.15rem;
+	letter-spacing: 0.04rem;
+}
+
+.speaker-affil {
+	font-size: 1.15rem;
+	color: #4a5568;
+}
+
+.speaker-links {
+	line-height: 1.4;
+	color: #4a5568;
+	padding-left: 1.6rem;
+	font-size: 1.15rem;
+	white-space:pre;
+	margin: 0.125rem;
+	margin-bottom: 0.75rem;
+}
+
+.twitter-share-button {
+	vertical-align: middle;
+}
+
+.seminar-title {
+	color: #68778d;
+	font-weight: 600;
+	font-size: 1.15rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.seminar-abstract {
+	color: #4a5568;
+	font-style:italic;
+	font-size: 1.15rem;
+	margin-bottom: 0.5rem;
+	text-align: justify;
+}
+
+.remaining-time-icon {
+	color: #00eb3e;
+	white-space: pre;
+}
+
+.remaining-time {
+	font-weight: 400;
+	font-style: italic;
+	white-space: pre;
+}
+
+.video-on-demand {
+	color: #68778d;
+	white-space: pre;
+}
+
+.proper-paragraph {
+	margin-bottom: 1.0rem;
+	font-size: 1.15rem; 
+	color: #4a5568;
+	line-height: 1.4;
+}
+
+.section-title {
+	margin-bottom: 0.25rem;
+	font-weight: 700;
+	letter-spacing: .1em;
+	font-size: 1.4rem;
+	color: #8e9cb4;
+}
+
+.logo_outline {
+	outline: 1px;
+	outline-style: solid;
+	outline-color: #241a5a;
+}
+
+.button:hover {
+	opacity: 0.8;
+}
+
+.button:focus, .button:active {
+	opacity: 0.8;
+	box-shadow: 0 0 2px 2px lightskyblue;
+}
+
+#page-container {
+	position: relative;
+	padding-top:1rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	padding-bottom: 2rem;
+}
+
+.logos-row {
+	display: flex;
+	flex-wrap: wrap;
+	height:4rem;
+}
+
+.logos-column {
+	flex: 3rem;
+}
+
+.logos-column img {
+	align-content: center;
+	vertical-align: middle;
+	max-width: 87.5%;
+	padding-bottom: 1.4rem;
+}
+
+#credits {
+
+	font-family: 'FiraGO-BoldItalic', sans-serif;
+	
+	font-style: italic; 
+	font-size: 1.2rem;
+	font-weight: 550;
+	
+	color: #3a4a74;
+}
+
+#credits a {
+	color: #3a4a74;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#page-container {
+	font-family: 'FiraGO', sans-serif;
+	max-width: 60rem;
+}
+
+</style>
+
+<body>
+	<!-- Page -->
+	<div  id="page-container" class="font-firago mx-auto max-smartphone-letter">
+	
+		<header id="banner-element" class="flex items-center">
+
+			<a href='https://www.worldwideneuro.com/'>
+				<div class="container sm:container md:container lg:container-centered xl:container-centered logos leading-none text-white font-medium">
+					<img class='banner object-cover object-right' src="banner.jpg"></img>
+					<h1 class="website-title text-md md:text-md lg:text-lg xl:text-lg2 font-semibold text-gray-750">World Wide Neuro</h1>
+				</div>
+			</a>
+		</header>
+
+		<div id='follow-us-on-twitter'>
+			<a class="twitter-follow-button" href="https://twitter.com/worldwideneuro" data-show-count="false">
+			Follow @WorldWideNeuro
+			</a>
+		</div>
+
+		<section class="section-element">
+			<h2 class="section-title">
+				SEMINAR DETAILS
+			</h2>
+			<div id="detected-timezone"></div>
+			<select id="selected-timezone"></select>
+			<div id="seminar-element"></div>
+		</section>
+
+		<section class="section-element">
+			<h2 class="section-title">
+				NEUROSCIENCE SEMINARS ONLINE
+			</h2>
+			<p id="how-many-past-upcoming" class="text-gray-600 mb-2 sm:mb-2 md:mb-2 lg:mb-3 xl:mb-4" style="font-size:1.2rem;"></p>
+			<p class="proper-paragraph">
+				This is a new and an ongoing effort to continue, expand and democratise the <a href="http://www.neurotheory.ox.ac.uk/">Oxford Neurotheory Forum</a>, bringing it into the online realm, and making seminars green and accessible from anywhere on the planet. We invite researchers from other institutions to participate. Join us, invite speakers and organise online seminars, host on any teleconferencing platform (Zoom, Crowdcast, etc) and advertise here, via the website and our mailing list.
+			</p>
+
+			<p style="font-size:14px;color:#68778d;line-height:1.4;font-weight:600;">
+				To join the mailing list send a blank e-mail to:
+			</p>
+			
+			<p class="mt-2 text-sm2 text-gray-700 leading-normal">
+				<ul>
+					<li class="mt-1.5 leading-normal text-gray-700 pl-7 text-sm">
+						<svg style="overflow:visible;" class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8" viewbox="0 0 17 17">
+							<path class="text-gray-600 fill-current" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 0 1-.9 0L4 9.62V18h16V9.62z" />
+						</svg><a style="white-space:pre;font-size:1.1rem;" href="mailto: worldwideneuro+subscribe@googlegroups.com">  worldwideneuro+subscribe@googlegroups.com</a>
+					</li>
+				</ul>
+			</p>
+		</section>
+
+		<section class="section-element">
+
+			<h2 class="section-title">
+				WANT TO BECOME A HOST?
+			</h2>
+
+			<h1 style="font-size:1.25rem;font-weight:600;color:#4a5568;margin-top:0.5rem;">
+				Advertise Your Online Seminar
+			</h1>
+
+			<p class="proper-paragraph">
+				If you want to advertise your online seminar with us, you should contact us and let us know the details, i.e., date, time, teleconferencing platform, etc. We will post the event and advertise via the email lists. If you contribute several talks, and we like you, we will add you to the participating labs list. 
+			</p>
+
+		</section>
+
+		<section class="section-element">
+			<h2 class="section-title">
+				WORLD-WIDE AUDIENCE
+			</h2>
+			<p style="font-size:1.2rem;color:#718096;padding-bottom:0.9rem;">
+				Our seminars are attended by viewers from all across the world
+			</p>
+			<img class='logos' src="unique_visitors.png" style="max-width:100%;padding-bottom:0.75rem;"></img><br>
+		</section>
+
+		<section class="section-element">
+			<h2 class="section-title" style="padding-bottom:0.9rem;">
+				ABOUT THIS WEBSITE
+			</h2>
+
+			<p class="proper-paragraph" style="font-style:italic;font-weight:450">
+				Designed and implemented by <a href="https://twitter.com/tpvogels">@TPVogels</a> and <a href="https://twitter.com/bozelosp">@BozelosP</a> at <a href="https://vogelslab.org">Vogels Lab</a>
+			</p>
+		</section>
+
+	</div>
+	<!-- end Page -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<script type="text/javascript">
+
+var banned_tz_names=['Africa/Asmera','Antarctica/Casey','Antarctica/Davis','Antarctica/DumontDUrville','Antarctica/Macquarie','Antarctica/Mawson','Antarctica/McMurdo','Antarctica/Palmer','Antarctica/Rothera','Antarctica/South_Pole','Antarctica/Syowa','Antarctica/Troll','Antarctica/Vostok','Arctic/Longyearbyen','Australia/ACT','Australia/NSW','CET','CST6CDT','EET','EST','EST5EDT','Eire','Etc/GMT','Etc/GMT+0','Etc/GMT+1','Etc/GMT+10','Etc/GMT+11','Etc/GMT+12','Etc/GMT+2','Etc/GMT+3','Etc/GMT+4','Etc/GMT+5','Etc/GMT+6','Etc/GMT+7','Etc/GMT+8','Etc/GMT+9','Etc/GMT-0','Etc/GMT-1','Etc/GMT-10','Etc/GMT-11','Etc/GMT-12','Etc/GMT-13','Etc/GMT-14','Etc/GMT-2','Etc/GMT-3','Etc/GMT-4','Etc/GMT-5','Etc/GMT-6','Etc/GMT-7','Etc/GMT-8','Etc/GMT-9','Etc/GMT0','Etc/Greenwich','Etc/UCT','Etc/UTC','Etc/Universal','Etc/Zulu','Europe/Isle_of_Man','GB','GB-Eire','GMT','GMT+0','GMT-0','GMT0','Greenwich','HST','MET','MST','MST7MDT','NZ','NZ-CHAT','Navajo','PRC','PST8PDT','Pacific/Efate','Pacific/Pohnpei','Pacific/Truk','ROC','ROK','UCT','US/Aleutian','US/Central','US/East-Indiana','US/Eastern','US/Indiana-Starke','US/Mountain','US/Pacific','US/Pacific-New','US/Samoa','UTC','Universal','W-SU','WET','Zulu'] ;
+
+const request_data = async () => {
+
+	var viewport_width = window.matchMedia("(min-width: 1200px)");
+	
+	var fewer_words, full_abstract, fewer_words_on ;
+	var website_link_max_character_len=28;
+
+	var response = await fetch('seminar_data.json?nocache=123');
+	var seminar_data = await response.json();
+
+	var queryString=window.location.search;
+	var urlParams = new URLSearchParams(queryString);
+	var this_seminar_id= urlParams.get('id');
+	
+	var this_seminar=seminar_data[this_seminar_id];
+
+	document.title=this_seminar['speaker_title'] + ' ' + this_seminar['seminar_speaker'] + ' | ' + this_seminar ['seminar_title']; 
+
+	var user_timezone = moment.tz.guess();
+
+	var timezone_data = [] ;
+
+	moment.tz.names().forEach( d => {
+		if ( ! banned_tz_names.includes(d) ) {
+			let human_friendly_timezone_name=d.replace(/\//g,' / ');
+			human_friendly_timezone_name=human_friendly_timezone_name.replace(/_/g,' ');
+			timezone_data.push([d,human_friendly_timezone_name]);
+		}
+	});
+
+	document.getElementById('selected-timezone').innerHTML=populate_pick_timezone(timezone_data);
+	document.getElementById('selected-timezone').addEventListener('change', function(event) {
+		user_timezone=event.target.value;
+		Object.entries(seminar_data).map( d => update_timezone_date_time(user_timezone,d) )
+	});
+
+	document.getElementById('detected-timezone').innerHTML='Seminar date / time is specified in the following timezone:';
+
+	document.getElementById('seminar-element').innerHTML=prepare_seminar_element(this_seminar);
+
+	var upcoming_seminars_array=[this_seminar];
+
+	document.querySelectorAll('.dots').forEach(item => {
+		item.addEventListener('click', event => {
+
+			parent_seminar_element=event.currentTarget.parentNode ;
+			more=parent_seminar_element.querySelector('.more');
+			dots=parent_seminar_element.querySelector('.dots');
+
+			dots.style.display='none';
+			more.style.display='inline';
+			
+		});
+	});
+
+	document.querySelectorAll('.less').forEach(item => {
+		item.addEventListener('click', event => {
+
+			parent_seminar_element=event.currentTarget.parentNode.parentNode ; // this would be .actions div
+			more=parent_seminar_element.querySelector('.more');
+			dots=parent_seminar_element.querySelector('.dots');
+	
+			dots.style.display='inline';
+			more.style.display='none';
+
+		});
+	});
+
+	update_live_status();
+	window.setInterval(update_live_status, 10000);
+
+	function update_live_status() {
+
+		upcoming_seminars_array.forEach( d => {
+
+			let [html_text_live_status,time_delta]=seminar_live_status(d);	
+
+			document.querySelector('#seminar-id-'+this_seminar_id+' > h3 > .live-status').innerHTML = html_text_live_status ;
+
+			if (time_delta>=-3000 && time_delta<=1800){
+				if (d['password']!='') {
+					let html_text_passwd='<i> / 🔑 ' + d['password'] +'</i>';
+					document.querySelector('#seminar-id-'+this_seminar_id+' > span.teleconf-info > span').innerHTML = html_text_passwd ;
+				}
+			}
+
+		});
+			
+	}
+
+	function seminar_live_status(d){
+
+		let time_delta=get_moment_time_diff_between_seminar_time_and_now(d);
+
+		let html_text ;
+		if (time_delta>=0) {
+			html_text=get_human_readable_time_delta(time_delta);
+		} else if (time_delta<0 && time_delta>=-4350) {
+			html_text='';
+			html_text+='  <span style="color:red;white-space:pre;"> ● </span>';
+			html_text+='<span style="white-space:pre;font-weight:400;font-style:italic;"> Live</span>';
+		}
+		return [html_text,time_delta];
+	}
+
+	function prepare_seminar_element(d){
+
+		let is_it_past_or_future=(get_moment_time_diff_between_seminar_time_and_now(d) >= -4350)? 'future' : 'past' ;
+
+		let html_text='<header id="seminar-id-'+this_seminar_id+'" class="seminar-element">' ;
+		html_text+='<h3 class="seminar-date">' ;
+		
+		html_text+=timezone_date_time(d);
+
+		if (is_it_past_or_future=='future'){
+			html_text+='<span class="live-status"></span></h3>';
+				
+			if (!d['seminar_link']=='') {
+
+				html_text+='<span class="teleconf-info">';
+
+				if (d['seminar_link'].includes('mailto:')) {
+					html_text+='Register to attend by <a href="'+d['seminar_link']+'?subject=Online seminar registration request">emailing 📩</a> the host<br>';
+				} else {
+					html_text+='Join via this<a href="'+d['seminar_link']+'"> link 🔗 </a>';
+					if (d['password']!=''){
+						html_text+='<span class="passwd"></span>';
+					}
+				}
+
+			}
+
+			if (d['seminar_link'].includes('mailto:')) {
+				html_text+='<span class="calendar-event">Add this <a href="seminar_event_'+this_seminar_id+'.ics">event</a> to your 🗓<span>';
+			} else {
+				if (d['seminar_link']!='') {
+					html_text+='<span class="calendar-event"> / Add this <a href="seminar_event_'+this_seminar_id+'.ics">event</a> to your 🗓<span>';
+				} else {
+					html_text+='<span class="calendar-event">Add this <a href="seminar_event_'+this_seminar_id+'.ics">event</a> to your 🗓<span>';
+				}
+			}
+
+			html_text+='<br>';
+			
+		} else {
+			if (d['video_on_demand']!=''){
+				html_text+='<span class="video-on-demand">  📺  ' + 'Watch <a href="'+d['video_on_demand']+'">here</a></span>' ;
+			} 
+			html_text+='</h3>';
+		}
+		
+		html_text+='<span class="speaker-name">';
+		
+		if (d['speaker_title']!=''){
+			html_text+=d['speaker_title']+' ';
+		}
+		
+		html_text+=d['seminar_speaker']+'</span>';
+		if (d['speaker_affil']!=''){
+			html_text+='<span class="speaker-affil"> | '+d['speaker_affil']+'</span>' ;	
+		} 
+		html_text+='<br>';
+
+		if (d['speaker_website']!=''){
+
+			var website_link=d['speaker_website'];
+			website_link=website_link.replace('http://','')
+			website_link=website_link.replace('https://','')
+			website_link=website_link.substring(0,website_link_max_character_len) + ' ...'
+
+			if (d['speaker_twitter']!=''){
+
+				html_text+='<ul class="speaker-links"><li>';
+				html_text+=twitter_svg();
+				html_text+='<a href="https://twitter.com/'+d['speaker_twitter'].substr(1)+'">'+d['speaker_twitter']+'</a>  ' ;
+				html_text+=' 🌐<a href="'+d['speaker_website']+'">'+website_link+'</a></li></ul>' ;
+			} else {
+				html_text+=' 🌐<a href="'+d['speaker_website']+'">'+website_link+'</a>' ;
+			}
+
+		}
+		
+		if (d['seminar_title']!=''){
+
+			this_intent='https://twitter.com/intent/tweet?text=';		
+			this_intent+='Online Seminar: ' + d['speaker_title'] + ' ' + d['seminar_speaker'] + ' ';
+			try {
+				this_intent+=d['speaker_twitter'] +' ';
+			} catch {}
+			this_intent+=' – "' + d['seminar_title'] +'" | ' + d['seminar_date'] + ' via @worldwideneuro';
+			
+			this_intent=encodeURI(this_intent);
+			
+			html_text+='<p class="seminar-title">';
+			html_text+='&#x25CB; ' + d['seminar_title'] + '<span style="white-space:pre;">   </span>';
+			html_text+='<a class="twitter-share-button" href="'+this_intent+'">';	
+			html_text+='Twitter</a>'
+ 			html_text+='</p>' ;
+		}
+
+		if (d['seminar_abstract']!=''){
+			let abstract_text=slice_seminar_abstract(d['seminar_abstract']);
+			html_text+='<div class="seminar-abstract">' + abstract_text  + '</div>';
+		}
+
+		if (d['topic_tags']=='rlwngwrngwlnw'){
+			let topic_tags=get_split_trim(d['topic_tags']);
+			topic_tags=topic_tags.map(d => '<div class="seminar-tags" style="background-color:'+topic_tags_to_colors[d]+';">'+d+'</div>');
+			let seminar_series_tags=get_split_trim(d['hosted_by']);
+			seminar_series_tags=seminar_series_tags.map(d => '<div class="seminar-tags" style="background-color:'+seminar_series_tags_to_colors[d]+';">hosted by <i>'+d+'</i></div>');
+			html_text+='<p class="seminar-tags-container">';
+			html_text+=topic_tags.join(' ');
+			html_text+=seminar_series_tags.join(' ');
+			html_text+='</p>';
+		}
+
+		html_text+='</header>' ;
+		
+		return html_text;
+						
+	}
+
+	function slice_seminar_abstract(d){
+
+		let character_number_limit=Math.round(0.275*(d.length));
+
+		let words=d.split(' ');
+
+		let fw=[]
+		let desirable_stop=0;
+		let status=true;
+		for(i = 0; i < words.length; i++){
+			desirable_stop+=words[i].length;
+			fw.push(words[i]);
+			if (desirable_stop>character_number_limit && status){
+				fw.push('<span class="dots font-semibold" style="display:inline;"> ... more</span><span class="more" style="display:none;">');
+				status=false;
+			}
+		}
+		fw.push('<span class="less font-semibold"> ... less </span></span>');
+		fw=fw.join(' ');
+		return fw;
+	}
+
+	function timezone_date_time(d) {
+
+		let html_text='<span class="timezone-date-time">' ;
+
+		if (d['seminar_date']!='' && d['timezone']!=''){
+
+			let datetime=d['seminar_date'].toUpperCase() + ' ' + d['seminar_time']
+			let host_provided_timezone=d['timezone'];
+			datetime=moment(datetime.substring(5),"MMM DD, YYYY HH:mm").tz(host_provided_timezone,true);
+			datetime=datetime.tz(user_timezone).format('LLLL');
+			html_text+=datetime;
+		}
+
+		html_text+='</span>'
+
+		return html_text ; 
+	}
+
+	function update_timezone_date_time(user_timezone,d) {
+
+		let seminar_id_selector='#seminar-element';
+
+		x=document.querySelector(seminar_id_selector + ' .timezone-date-time');
+
+		if (x!=null) {
+			let datetime=d[1]['seminar_date'].toUpperCase() + ' ' + d[1]['seminar_time']
+			let host_provided_timezone=d[1]['timezone'];
+			datetime=moment(datetime.substring(5),"MMM DD, YYYY HH:mm").tz(host_provided_timezone,true);
+			datetime=datetime.tz(user_timezone).format('LLLL');
+			document.querySelector(seminar_id_selector + ' .timezone-date-time').innerHTML=datetime;
+		}
+	}
+
+	function parse_seminar_date_time(d){
+		let datetime=d['seminar_date'].toUpperCase() + ' ' + d['seminar_time']
+		let host_provided_timezone=d['timezone'];
+		let moment_tz_object=moment.tz(datetime.substring(5),"MMM DD, YYYY HH:mm",host_provided_timezone);
+		return moment_tz_object;
+	}
+
+	function parse_seminar_time(d){
+		let datetime=d['seminar_date'].toUpperCase() + ' ' + d['seminar_time']
+		let host_provided_timezone=d['timezone'];
+		datetime=moment(datetime.substring(5),"MMM DD, YYYY HH:mm").tz(host_provided_timezone,true);
+		datetime=datetime.tz(user_timezone).format('HH:mm');
+		return datetime;
+	}
+
+	function get_now_moment(){
+		let now_string = moment().utc().format("MMM DD, YYYY HH:mm").toString();
+		let now_moment_object=moment.tz(now_string,"MMM DD, YYYY HH:mm","UTC");
+		return now_moment_object;
+	}
+
+	function get_moment_time_diff_between_seminar_time_and_now(d){
+		let seminar_date_time=parse_seminar_date_time(d);
+		let now_moment_object=get_now_moment();
+		return get_moment_difference(seminar_date_time,now_moment_object);
+	}
+
+	function get_time_difference_between_two_seminar_times(d1,d2){
+		let moment_object_d1=parse_seminar_date_time(d1);
+		let moment_object_d2=parse_seminar_date_time(d2);
+		return get_moment_difference(moment_object_d1,moment_object_d2);
+	}
+
+	function get_moment_difference(d1,d2){
+		return moment.duration(d1.diff(d2)).asSeconds();
+	}
+
+	function onlyUnique(value, index, self) { 
+		return self.indexOf(value) === index;
+	}
+
+	function array_move(arr, old_index, new_index) {
+		if (new_index >= arr.length) {
+			var k = new_index - arr.length + 1;
+			while (k--) {
+				arr.push(undefined);
+			}
+		}
+		arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+		return arr;
+	};
+
+	function get_split_trim(d) {
+		let arr=[];
+		d.split(',').forEach( i => { 
+			if (!isEmpty(i) ) { 
+				arr.push(i.trim());
+			}
+		});
+		return arr ;
+	}
+
+	function isEmpty(str) {
+		return str === null || str.match(/^ *$/) !== null;
+	}
+
+	function twitter_svg() {
+		return '<svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 inline -ml-7 mr-1.5 -mt-0.8" viewbox="0 0 20 20"><path class="fill-current" style="color:#008dd6;" d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>';
+	}
+
+	function populate_pick_timezone(d){
+
+		let timezones_html=d.map( d => {
+			
+			let html_text='';
+
+			if (d[0]==user_timezone) {
+				html_text='<option selected="selected" value="'+d[0]+'">'+d[1]+'</option>';
+			} else {
+				html_text='<option value="'+d[0]+'">'+d[1]+'</option>';
+			}
+			return html_text
+		});
+
+		return timezones_html.join('');
+	}
+
+	function get_human_readable_time_delta(time_delta){
+
+		var months = Math.floor(time_delta / 2629746);
+		time_delta -= months * 2629746;
+
+		var weeks = Math.floor(time_delta / 604800);
+		time_delta -= weeks * 604800;
+	
+		var days = Math.floor(time_delta / 86400);
+		time_delta -= days * 86400;
+
+		var hours = Math.floor(time_delta / 3600) % 24;
+		time_delta -= hours * 3600;
+
+		var minutes = Math.floor(time_delta / 60) % 60;
+		time_delta -= minutes * 60;
+
+		let html_text='<span class="remaining-time-icon">  ⏳ </span><span class="remaining-time">';
+
+		if (months>=1){
+			html_text+=format_remaining_time_string(months,'m'); 
+			if (weeks!=0) {
+				html_text+=' and ' + format_remaining_time_string(weeks,'w');
+			}	
+		} else if (months==0 && weeks>=1){
+
+			if (weeks<=2) {
+				html_text+=format_remaining_time_string(weeks,'w'); 
+				if (days!=0) {
+					html_text+=' and ' + format_remaining_time_string(days,'d');
+				}
+			} else {
+				html_text+=format_remaining_time_string(weeks,'w');
+			}
+			
+		} else {
+			if (days>=3){
+				html_text+=format_remaining_time_string(days,'d');
+			} else if (days<=3 && days>=1){
+				html_text+=format_remaining_time_string(days,'d');
+				if (hours!=0){
+					html_text+=' and ' + format_remaining_time_string(hours,'hr');
+				}
+			} else if (days==0) {
+				if (hours>=1) {
+					html_text+=format_remaining_time_string(hours,'hr');
+					if (minutes!=0){
+						html_text+=' and ' + minutes.toString() + ' min';
+					}
+				} else if (hours==0) {
+					html_text+=minutes.toString() + ' minutes';
+				}
+			}
+		}
+		
+		return html_text + '</span>';
+
+	}
+
+	function format_remaining_time_string(d,s) {
+		
+		if (s=='m') {
+			let f=(d>1)? 'months' : 'month';
+			return d.toString() + ' ' + f;
+		} else if (s=='w') {
+			let f=(d>1)? 'weeks' : 'week';
+			return d.toString() + ' ' + f;
+		} else if (s=='d') {
+			let f=(d>1)? 'days' : 'day';
+			return d.toString() + ' ' + f;
+		} else if (s=='hr') {
+			let f=(d>1)? 'hours' : 'hour';
+			return d.toString() + ' ' + f;
+		}
+
+	}
+
+	function check_browser() {
+		// Get the user-agent string 
+		let userAgentString =  
+			navigator.userAgent; 
+		// Detect Chrome 
+		let chromeAgent =  
+			userAgentString.indexOf("Chrome") > -1;
+		// Detect Internet Explorer 
+		let IExplorerAgent =  
+			userAgentString.indexOf("MSIE") > -1 ||  
+			userAgentString.indexOf("rv:") > -1; 
+		// Detect Firefox 
+		let firefoxAgent =  
+			userAgentString.indexOf("Firefox") > -1; 
+		// Detect Safari 
+		let safariAgent =  
+			userAgentString.indexOf("Safari") > -1; 
+		// Discard Safari since it also matches Chrome 
+		if ((chromeAgent) && (safariAgent))  
+			safariAgent = false; 
+		// Detect Opera 
+		let operaAgent =  
+			userAgentString.indexOf("OP") > -1;
+
+		return [safariAgent,firefoxAgent,chromeAgent];
+	}
+
+}
+
+request_data();
+
+</script>
+
+</body>
+</html>

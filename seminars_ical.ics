@@ -1,0 +1,618 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+UID:ee9a1c295e14b47496a5ad9f19da4e25ba3174c8687f0e908d936822b9143b39
+SUMMARY:Dr Xiangrui Li
+DTSTART;VALUE=DATE-TIME:20200424T170000Z
+DTEND;VALUE=DATE-TIME:20200424T140000Z
+DESCRIPTION:This is an online seminar hosted by: Imaging Ohio\n\nSpeaker: Dr Xiangrui Li | Ohio State University\n\nSeminar Title: Tips of MRI Data Acquisition at CCBBI\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:013e6c9a370e12a5fb3ca7dafa8ca4163fb74e3a19f5c91896690f492d54ab24
+SUMMARY:Dr Jeffrey Diamond
+DTSTART;VALUE=DATE-TIME:20200424T130000Z
+DTEND;VALUE=DATE-TIME:20200424T150000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Dr Jeffrey Diamond | NIH Bethesda\n\nSeminar Title: Diverse synaptic mechanisms underlie visual signaling in the retina\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:08c7b2621395c7f69ac0eb554a4ad16f3ebfee9ad7f251640a4e4da88c4a6da1
+SUMMARY:Prof Blake Richards
+DTSTART;VALUE=DATE-TIME:20200403T130000Z
+DTEND;VALUE=DATE-TIME:20200403T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Blake Richards | McGill University\n\nSeminar Title: Burst-dependent synaptic plasticity can coordinate learning in hierarchical circuits\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:b035d724132c0d260c8caf0fd72fb0d42e3d2842e3f08ccba8bd751d002ba01b
+SUMMARY:Prof Philipp Berens
+DTSTART;VALUE=DATE-TIME:20200703T130000Z
+DTEND;VALUE=DATE-TIME:20200703T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Philipp Berens | University of Tübingen\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:15c700adcb99fbf495e9e2c4f149a220c52bbd0b24f233fcf9e93e5cec45f503
+SUMMARY:Prof Timothy Lillicrap
+DTSTART;VALUE=DATE-TIME:20200612T130000Z
+DTEND;VALUE=DATE-TIME:20200612T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Timothy Lillicrap | Google Deep Mind, University College London\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:5fae3533b6d873da43a04c41ac0e893c190002752c989f2f46ba11fea3f6c986
+SUMMARY:Dr. Srdjan Ostojic
+DTSTART;VALUE=DATE-TIME:20200619T130000Z
+DTEND;VALUE=DATE-TIME:20200619T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Dr. Srdjan Ostojic | École Normale Supérieure\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:e93426d53d9e7f64b135bb78d7f9e90a68d8f212ade8161ced79ccfb804bce17
+SUMMARY:Prof Annegret Falkner
+DTSTART;VALUE=DATE-TIME:20200626T130000Z
+DTEND;VALUE=DATE-TIME:20200626T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Annegret Falkner | Princeton University\n\nSeminar Title: Mapping the neural dynamics of social dominance and defeat\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ede2820fefb4b58e5cfe213106d4ba114a06b06a75a53e8fa9f9504242a92bf7
+SUMMARY:Prof Kay Tye
+DTSTART;VALUE=DATE-TIME:20200605T160000Z
+DTEND;VALUE=DATE-TIME:20200605T100000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Kay Tye | University of Calidformnia, San Diego\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:205582ab5b7bb2035dce48dfb1885a73d343081c95735c6f069ea49eaad9b2fc
+SUMMARY:Dr Daniela Vallentin
+DTSTART;VALUE=DATE-TIME:20200515T130000Z
+DTEND;VALUE=DATE-TIME:20200515T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Dr Daniela Vallentin | Max Planck Institute for Ornithology\n\nSeminar Title: Neural control of vocal interactions in songbirds\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:31876067ea20d3f0fec59c0216adea7f65f2f9ec3e7ac772fc6ea1bba51d5957
+SUMMARY:Prof Ann-Marie Oswald
+DTSTART;VALUE=DATE-TIME:20200522T130000Z
+DTEND;VALUE=DATE-TIME:20200522T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Ann-Marie Oswald | University of Pitsburgh\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:3d7ac9c22dd42849e6b99558be9f207668f21df773bf9b3c373cc0cbe52f7a1b
+SUMMARY:Prof James O Olopade
+DTSTART;VALUE=DATE-TIME:20200522T150000Z
+DTEND;VALUE=DATE-TIME:20200522T170000Z
+DESCRIPTION:This is an online seminar hosted by: SONA\n\nSpeaker: Prof James O Olopade | University of Ibadan\n\nSeminar Title: Neuroscience Investigations in the Virgin Lands of African Biodiversity\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:568a6e5a6f7b527b1627b2c2a33f7a4acf19f17c6294bf14bed8a50f33676a01
+SUMMARY:Prof Upinder Singh Bhalla
+DTSTART;VALUE=DATE-TIME:20200529T130000Z
+DTEND;VALUE=DATE-TIME:20200529T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Upinder Singh Bhalla | National Centre for Biological Sciences of the Tata Institute of Fundamental Research.\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:f9f9953364acd5e12df5d116208546c1f23677c827d2dac840387c976d7fd674
+SUMMARY:Prof Xaq Pitkow
+DTSTART;VALUE=DATE-TIME:20200508T130000Z
+DTEND;VALUE=DATE-TIME:20200508T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Xaq Pitkow | Baylor College of Medicine & Rice University\n\nSeminar Title: Rational thoughts in neural codes\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:c604ebcb925bd9a111b5fa4a5dfc40ca775f2dd3c0b32cbcf97809aff93feb4f
+SUMMARY:Prof Constance Cepko
+DTSTART;VALUE=DATE-TIME:20200420T150000Z
+DTEND;VALUE=DATE-TIME:20200420T170000Z
+DESCRIPTION:This is an online seminar hosted by: Cortex Club\n\nSpeaker: Prof Constance Cepko | Harvard Medical School & HHMI\n\nSeminar Title: Cell Fate Determination in the Retina\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:4ebade58265ac72541dbc49a90c7d12e3cbf1e2736fd561bc1ad95c2acd113fe
+SUMMARY:Dr Adrian Smedowski
+DTSTART;VALUE=DATE-TIME:20200601T150000Z
+DTEND;VALUE=DATE-TIME:20200601T180000Z
+DESCRIPTION:This is an online seminar hosted by: neuroEYEscience\n\nSpeaker: Dr Adrian Smedowski | Medical University of Silesia\n\nSeminar Title: Electrical coupling of optic nerve axons - a novel model of gap junctions' involvement in optic nerve function\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:86732c78f91fc4d1f97d3a54b4ccea522c573fd7e9e404480a2aaa0f6c461172
+SUMMARY:Prof Thomas Euler
+DTSTART;VALUE=DATE-TIME:20200615T130000Z
+DTEND;VALUE=DATE-TIME:20200615T150000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Prof Thomas Euler | University of Tubingen\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:f4fe5b408f04733588eb4e3e21adcea098f3c45aca83ada08a309aca5778a7fb
+SUMMARY:Prof Simon Hippenmeyer
+DTSTART;VALUE=DATE-TIME:20200615T150000Z
+DTEND;VALUE=DATE-TIME:20200615T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Simon Hippenmeyer | Institute of Science and Technology (IST) - Austria\n\nSeminar Title: Neural Stem Cell Lineage Progression in Developing Cerebral Cortex\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:788264278b51f0737ed5a2211f29e9b1071d2c385b3671b21df809650013a6f1
+SUMMARY:Prof Roger D. Traub
+DTSTART;VALUE=DATE-TIME:20200622T160000Z
+DTEND;VALUE=DATE-TIME:20200622T130000Z
+DESCRIPTION:This is an online seminar hosted by: neuroEYEscience\n\nSpeaker: Prof Roger D. Traub | IBM T.J. Watson Research Center & Department of Neurology Columbia University\n\nSeminar Title: Evidence for electrical coupling between proximal axons of principal neurons\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:587cf3786683c687487864bc3139748dcd38d9c6dbce4b86cecf5b417ab6e23f
+SUMMARY:Prof. Greg Schwartz
+DTSTART;VALUE=DATE-TIME:20200629T140000Z
+DTEND;VALUE=DATE-TIME:20200629T160000Z
+DESCRIPTION:This is an online seminar hosted by: Tübingen Vision Research\n\nSpeaker: Prof. Greg Schwartz | Northwestern University, Feinberg School of Medicine\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:dd3b1cd1cd989a5d868c310768b476fde9fe96a7a355423f2e6453f19144c2a8
+SUMMARY:Dr. Tilo Schwalger
+DTSTART;VALUE=DATE-TIME:20200608T070000Z
+DTEND;VALUE=DATE-TIME:20200608T110000Z
+DESCRIPTION:This is an online seminar hosted by: NeuroMath\n\nSpeaker: Dr. Tilo Schwalger | TU Berlin\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:14571c034e055edcb1850432440d5219ab95f0f695dd07b3abd3d7c523c22655
+SUMMARY:Prof Mate Lengyel
+DTSTART;VALUE=DATE-TIME:20200608T130000Z
+DTEND;VALUE=DATE-TIME:20200608T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Mate Lengyel | University of Cambridge\n\nSeminar Title: Cortical-like dynamics in recurrent circuits optimized for sampling-based probabilistic inference\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:22636eb0f65187e15fd4b3651ec03b4bf65ed199f5951790d0dbc17974764db1
+SUMMARY:Dr Gautam Awatramani
+DTSTART;VALUE=DATE-TIME:20200511T140000Z
+DTEND;VALUE=DATE-TIME:20200511T160000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Dr Gautam Awatramani | University of Victoria\n\nSeminar Title: The subcellular organization of excitation and inhibition underlying high-fidelity direction coding in the retina\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:dde8672c77743e803ac6c6bb6efdb22a97974b0778254af99394f86e96310744
+SUMMARY:Prof Marion Silies
+DTSTART;VALUE=DATE-TIME:20200518T130000Z
+DTEND;VALUE=DATE-TIME:20200518T150000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Prof Marion Silies | University of Goettingen\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:e0bd12743b943cca512ec3628aa89f3c7d815af70f41dda149d743698fe39c6b
+SUMMARY:Prof Dorota Pojda-Wilczek
+DTSTART;VALUE=DATE-TIME:20200525T150000Z
+DTEND;VALUE=DATE-TIME:20200525T180000Z
+DESCRIPTION:This is an online seminar hosted by: neuroEYEscience\n\nSpeaker: Prof Dorota Pojda-Wilczek | Medical University of Silesia\n\nSeminar Title: Electrophysiology application for optic nerve and the central nervous system diseases\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ea83a70d53126ea4f43d19b29ad016898f429d1ccb7e459518067218ca1f7619
+SUMMARY:Prof Denis Jabaudon
+DTSTART;VALUE=DATE-TIME:20200423T150000Z
+DTEND;VALUE=DATE-TIME:20200423T170000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory, Geneva University\n\nSpeaker: Prof Denis Jabaudon | University of Geneva\n\nSeminar Title: Fate and freedom in developing neocortical circuits\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:0743dc996a717da42308ce259d73d5b5779dbb4b843b0fb6bbec01f0c3810a6a
+SUMMARY:Prof Bruno van Swinderen
+DTSTART;VALUE=DATE-TIME:20200430T100000Z
+DTEND;VALUE=DATE-TIME:20200430T120000Z
+DESCRIPTION:This is an online seminar hosted by: Cortex Club\n\nSpeaker: Prof Bruno van Swinderen | University of Queensland\n\nSeminar Title: A paradoxical kind of sleep In Drosophila melanogaster\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:f7555486d19636ebc52248ce6407b60d144b0745f902c30dfc3c8bc7bd6debff
+SUMMARY:Sir Prof David Klenerman
+DTSTART;VALUE=DATE-TIME:20200430T150000Z
+DTEND;VALUE=DATE-TIME:20200430T170000Z
+DESCRIPTION:This is an online seminar hosted by: SONA\n\nSpeaker: Sir Prof David Klenerman | University of Cambridge\n\nSeminar Title: Watching single molecules in action: How this can be used in neurodegeneration\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:3a016a1b41507da8d0f2449b3dd1d11a379e51b95292fbfd49e6c88cc7976290
+SUMMARY:Prof Franck Polleux
+DTSTART;VALUE=DATE-TIME:20200430T150000Z
+DTEND;VALUE=DATE-TIME:20200430T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Franck Polleux | Columbia University\n\nSeminar Title: A human-specific modifier of synaptic development, cortical circuit connectivity and function\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:55f77482652e3056a4fe108349dd472583c88dff42a15bf667132b2aeb08fe10
+SUMMARY:Prof Alain Chédotal
+DTSTART;VALUE=DATE-TIME:20200716T150000Z
+DTEND;VALUE=DATE-TIME:20200716T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Alain Chédotal | Institut Vision Paris\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ca74cb65c75c38a53745adc5edee78d272c582f1e7300c3fe0353fb86c8ff30e
+SUMMARY:Dr Sonia Garel
+DTSTART;VALUE=DATE-TIME:20200702T150000Z
+DTEND;VALUE=DATE-TIME:20200702T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Dr Sonia Garel | ENS Paris\n\nSeminar Title: Microglia and neuroimmune interactions in the wiring of cortical circuits\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:c600a285e018d7e28d5a3bf2c5cfaf922a114bce395c33df9e5c4997a37d1f43
+SUMMARY:Dr Stéphanie Baulac
+DTSTART;VALUE=DATE-TIME:20200723T150000Z
+DTEND;VALUE=DATE-TIME:20200723T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Dr Stéphanie Baulac | Paris Brain Institute\n\nSeminar Title: Developmental origins and emerging therapeutic perspectives in genetic epilepsies\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:12c47c0e9241fecc620c493cfd01fca4028d98896d0d6059996cac74ee95e4e4
+SUMMARY:Prof Sergiu Pasca
+DTSTART;VALUE=DATE-TIME:20200730T150000Z
+DTEND;VALUE=DATE-TIME:20200730T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Sergiu Pasca | Stanford University\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:d9c2e105ab24ab1d33671f16251f398a48ed0ee8da244d1ace11299e10f10ff5
+SUMMARY:Prof Oscar Marin
+DTSTART;VALUE=DATE-TIME:20200709T150000Z
+DTEND;VALUE=DATE-TIME:20200709T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Oscar Marin | King's College London\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:8390a5e11526fe4449fef143a054eabb8879f5a6089876acb5b81440ee6d7cad
+SUMMARY:Prof Stefano Fusi
+DTSTART;VALUE=DATE-TIME:20200611T130000Z
+DTEND;VALUE=DATE-TIME:20200611T150000Z
+DESCRIPTION:This is an online seminar hosted by: Sheffield ML\n\nSpeaker: Prof Stefano Fusi | Columbia University\n\nSeminar Title: The geometry of abstraction in artificial and biological neural networks\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:2518b82accac54ed7e56b8a1b93eb27af739902fe0f93d335e0f9cbe9e3ed796
+SUMMARY:Dr. Guillermina Lopez Bendito
+DTSTART;VALUE=DATE-TIME:20200618T150000Z
+DTEND;VALUE=DATE-TIME:20200618T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Dr. Guillermina Lopez Bendito | Institute of Neuroscience Alicante\n\nSeminar Title: The thalamus that speaks to the cortex: spontaneous activity in the developing brain\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:d4a8051168340ef28dfdd00f8234fa403d988b6d264179d65e6c74e49723bc5b
+SUMMARY:Prof Debby Silver
+DTSTART;VALUE=DATE-TIME:20200625T150000Z
+DTEND;VALUE=DATE-TIME:20200625T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Debby Silver | Duke University\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:f9259ae68baa5f618dcac2ee2f06144efc7fd0035dd1af1fe23306779020a277
+SUMMARY:Prof Moritz Grosse-Wentrup
+DTSTART;VALUE=DATE-TIME:20200604T143000Z
+DTEND;VALUE=DATE-TIME:20200604T163000Z
+DESCRIPTION:This is an online seminar hosted by: Sheffield ML\n\nSpeaker: Prof Moritz Grosse-Wentrup | University of Vienna\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:0c2a38a8bc0720db2398f8a6fd25c4169223ac626b9fb565b30a05a62715c3c1
+SUMMARY:Prof Pierre Vanderhaeghen
+DTSTART;VALUE=DATE-TIME:20200604T150000Z
+DTEND;VALUE=DATE-TIME:20200604T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Pierre Vanderhaeghen | VIB Leuven\n\nSeminar Title: Species-specific mechanisms of the timing of human cortical development\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:21a4cabbf3bb15edb2b7662d797bd66b0ad7cd03d2e453ccce04cc5be2fa8296
+SUMMARY:Dr Cindy Poo
+DTSTART;VALUE=DATE-TIME:20200514T190000Z
+DTEND;VALUE=DATE-TIME:20200514T130000Z
+DESCRIPTION:This is an online seminar hosted by: U Oregon Neuro\n\nSpeaker: Dr Cindy Poo | Champalimaud\n\nSeminar Title: Cortical circuits for olfactory navigation\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:38777792e434800d97b91a261dc4e3c3dde6811f601a13ee54922c5af0e016bf
+SUMMARY:Prof Guoping Feng
+DTSTART;VALUE=DATE-TIME:20200514T200000Z
+DTEND;VALUE=DATE-TIME:20200514T170000Z
+DESCRIPTION:This is an online seminar hosted by: MIT Brain & Cog Sci\n\nSpeaker: Prof Guoping Feng | MIT Dept. of Brain and Cognitive Sciences\n\nSeminar Title: Thalamic reticular nucleus dysfunction in neurodevelopmental disorders\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:c54399edea783da191c5a756b0181c3ee52a36668116343b3da6e123b5afb293
+SUMMARY:Dr Silvia Cappello
+DTSTART;VALUE=DATE-TIME:20200514T150000Z
+DTEND;VALUE=DATE-TIME:20200514T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Dr Silvia Cappello | MPI Munich\n\nSeminar Title: Following neuronal trajectories\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:eb4d775f0723397e72863b84752966ab5553307ad45b1f060df9adea9175faa8
+SUMMARY:Dr Lorenz Fenk
+DTSTART;VALUE=DATE-TIME:20200521T150000Z
+DTEND;VALUE=DATE-TIME:20200521T170000Z
+DESCRIPTION:This is an online seminar hosted by: Cortex Club\n\nSpeaker: Dr Lorenz Fenk | Max Planck Institute for Brain Research\n\nSeminar Title: Dragons, Sleep, and the Claustrum\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:da66a2c6cd6427740f30a169c7c2116654fbfc8df44678a52b492330f795dccc
+SUMMARY:Prof Maria Tosches
+DTSTART;VALUE=DATE-TIME:20200521T150000Z
+DTEND;VALUE=DATE-TIME:20200521T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Maria Tosches | Columbia University\n\nSeminar Title: The evolutionary origins of cortical cell types\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:1a0e8dce91946d499a2ffcee1f1adaf259fa039a7a09d7f05d70e9584baa50ae
+SUMMARY:Prof Konrad Kording
+DTSTART;VALUE=DATE-TIME:20200528T130000Z
+DTEND;VALUE=DATE-TIME:20200528T150000Z
+DESCRIPTION:This is an online seminar hosted by: Sheffield ML\n\nSpeaker: Prof Konrad Kording | University of Pennsylvania\n\nSeminar Title: Causality in Neuroscience\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:def241636bfc463295c2df0fc5ae44b337a368400ca2cee1aeb71b02eed80bb8
+SUMMARY:Prof. Dr. Magdalena Götz
+DTSTART;VALUE=DATE-TIME:20200528T130000Z
+DTEND;VALUE=DATE-TIME:20200528T150000Z
+DESCRIPTION:This is an online seminar hosted by: Cortex Club\n\nSpeaker: Prof. Dr. Magdalena Götz | Institute for Stem Cell Research, Helmholtz Center Munich and Biomedical Center, University of Munich, Germany\n\nSeminar Title: Novel mechanisms of neurogenesis and neural repair\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:90ae793eac19cb54182ed3f953f8f9864bde927bb313d920b59a10ed376dd1cf
+SUMMARY:Dr Laurent NGuyen
+DTSTART;VALUE=DATE-TIME:20200528T150000Z
+DTEND;VALUE=DATE-TIME:20200528T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Dr Laurent NGuyen | University of Liege\n\nSeminar Title: Cell migration promotes dynamic cellular interactions to control cerebral cortex morphogenesis\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7be8e2d0cb90306562d2f5356c67b4f3d3000426265fd30ee2dbb16fcb6523e5
+SUMMARY:Prof Larry Abbott
+DTSTART;VALUE=DATE-TIME:20200507T225900Z
+DTEND;VALUE=DATE-TIME:20200507T165900Z
+DESCRIPTION:This is an online seminar hosted by: U Oregon Neuro\n\nSpeaker: Prof Larry Abbott | Columbia University\n\nSeminar Title: Multi-layer network learning in an electric fish\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7ce1d108408d7b62b590eee4fee35db73b7ee5a43c62983800450db7f099b5c7
+SUMMARY:Prof Earl Miller
+DTSTART;VALUE=DATE-TIME:20200507T200000Z
+DTEND;VALUE=DATE-TIME:20200507T170000Z
+DESCRIPTION:This is an online seminar hosted by: MIT Brain & Cog Sci\n\nSpeaker: Prof Earl Miller | Picower Institute, MIT\n\nSeminar Title: Working Memory 2.0\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:184cad8d26ceb50bdfbc9148b9628747b9210f096b77acdf9a90658233cf0563
+SUMMARY:Prof Bassem Hassan
+DTSTART;VALUE=DATE-TIME:20200507T150000Z
+DTEND;VALUE=DATE-TIME:20200507T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Bassem Hassan | Paris Brain Institute\n\nSeminar Title: Developmental origin of individuality in brain and behavior\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:3ef57ae55d2ad6046e64ea5556f55c07bb5ce17f84c7e4617c5f7c5f68adf930
+SUMMARY:Prof Ruediger Klein
+DTSTART;VALUE=DATE-TIME:20201112T000000Z
+DTEND;VALUE=DATE-TIME:20201112T010000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof Ruediger Klein | MPI Neurobiology, Munich\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:92727af9be664e6640d8ea7f713f2fd34db209955669b4a17769a88056a92b51
+SUMMARY:Prof. Nenad Cestan
+DTSTART;VALUE=DATE-TIME:20201001T150000Z
+DTEND;VALUE=DATE-TIME:20201001T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof. Nenad Cestan | Yale University\n\nSeminar Title: Developmental and Evolutionary Origins of the Human Neocortex\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ac308e923dd64ec04d623e363d6baaafcd288edad01b70c58086de6aa4f447c9
+SUMMARY:Prof 
+DTSTART;VALUE=DATE-TIME:20200910T150000Z
+DTEND;VALUE=DATE-TIME:20200910T180000Z
+DESCRIPTION:This is an online seminar\n\nSpeaker: Prof  | \n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7059449d038d6a88e35f1930c2155140b2de0e40776358df734ac2b1b54f04ab
+SUMMARY:Prof. Gord Fishell
+DTSTART;VALUE=DATE-TIME:20200917T150000Z
+DTEND;VALUE=DATE-TIME:20200917T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof. Gord Fishell | Harvard University\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7ca9340023ebe6dc9e9392462160a8656e61b66f84667f28af754785d53c8969
+SUMMARY:Prof. Rosa Cossart
+DTSTART;VALUE=DATE-TIME:20200924T150000Z
+DTEND;VALUE=DATE-TIME:20200924T180000Z
+DESCRIPTION:This is an online seminar hosted by: Geneva University\n\nSpeaker: Prof. Rosa Cossart | Mediterranean Neurobiology Institute\n\nSeminar Title: How development sculpts memory circuits\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:52ca75a2578de84218bba65d816c27ad268dde15147f3939f4e853922d55d587
+SUMMARY:Prof Giorgio Vallortigara
+DTSTART;VALUE=DATE-TIME:20200421T130000Z
+DTEND;VALUE=DATE-TIME:20200421T160000Z
+DESCRIPTION:This is an online seminar hosted by: Toulouse Neurobehaviour\n\nSpeaker: Prof Giorgio Vallortigara | University of Trento\n\nSeminar Title: The Evolution of Brain Asymmetry\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7eba931226200fb48a54cd8644799de4acbf2495860522a29c8e31cdeb0b4b1d
+SUMMARY:Prof Patrizia d'Ettorre
+DTSTART;VALUE=DATE-TIME:20200428T130000Z
+DTEND;VALUE=DATE-TIME:20200428T160000Z
+DESCRIPTION:This is an online seminar hosted by: Toulouse Neurobehaviour\n\nSpeaker: Prof Patrizia d'Ettorre | Université Paris-XIII\n\nSeminar Title: Behavioural variation, cognitive performance and personality in ants\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:3a89e55b3fabe228dbe48611d8a21371740e32a230776ec8a7af8cefd134442f
+SUMMARY:Dr Katrin Franke
+DTSTART;VALUE=DATE-TIME:20200707T140000Z
+DTEND;VALUE=DATE-TIME:20200707T160000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Dr Katrin Franke | University of Tubingen\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7e3c1f9d51852df4a9535d814f82a65868c3334a72833300e12fefd30ad60825
+SUMMARY:Dr Peter Neri
+DTSTART;VALUE=DATE-TIME:20200616T130000Z
+DTEND;VALUE=DATE-TIME:20200616T150000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Dr Peter Neri | École Normale Supérieure\n\nSeminar Title: Human reconstruction of local image structure from natural scenes\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:5e35e4c0a02e1480179c21f21d1b2da3a9df941f914ba67665050cdbb986872d
+SUMMARY:Dr. Laura Cancedda
+DTSTART;VALUE=DATE-TIME:20200616T150000Z
+DTEND;VALUE=DATE-TIME:20200616T180000Z
+DESCRIPTION:This is an online seminar hosted by: NeuroDev Disorders\n\nSpeaker: Dr. Laura Cancedda | Istituto Italiano di Tecnologia (IIT)\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:3f9c0383c840eb9b57b64fa7d2091cd949f7861e755867f2dc718b02f690830e
+SUMMARY:Prof Gasper Tkacik
+DTSTART;VALUE=DATE-TIME:20200602T120000Z
+DTEND;VALUE=DATE-TIME:20200602T150000Z
+DESCRIPTION:This is an online seminar hosted by: IST Neuroscience\n\nSpeaker: Prof Gasper Tkacik | Institute of Science and Technology Austria\n\nSeminar Title: Spanning the arc between optimality theories and data\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7654650aa5947a0cb497da994129be80442abb45169f7e80ebf7dfa5f7757da0
+SUMMARY:Ass. Prof. Camilla Bellone
+DTSTART;VALUE=DATE-TIME:20200602T150000Z
+DTEND;VALUE=DATE-TIME:20200602T180000Z
+DESCRIPTION:This is an online seminar hosted by: NeuroDev Disorders\n\nSpeaker: Ass. Prof. Camilla Bellone | University of Geneva\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:ac414de68ca80ee81228bc2c627bbdbe5d157b25c90bad5b82caf13f7693a049
+SUMMARY:Prof. Marla Feller
+DTSTART;VALUE=DATE-TIME:20200623T170000Z
+DTEND;VALUE=DATE-TIME:20200623T190000Z
+DESCRIPTION:This is an online seminar hosted by: Tübingen Vision Research\n\nSpeaker: Prof. Marla Feller | University of California, Berkeley\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:80ef3af86b1a153b5879518b400742b89b6f7c6508e76c8809ea8f56097a017b
+SUMMARY:Ass. Prof Silvia De Rubeis
+DTSTART;VALUE=DATE-TIME:20200630T160000Z
+DTEND;VALUE=DATE-TIME:20200630T180000Z
+DESCRIPTION:This is an online seminar hosted by: NeuroDev Disorders\n\nSpeaker: Ass. Prof Silvia De Rubeis | \n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:4961a23b5e3cd75d4c57f07344a183d308e4f891b88d8804e7a078023c500fc8
+SUMMARY:Prof Gina Turrigiano
+DTSTART;VALUE=DATE-TIME:20200609T150000Z
+DTEND;VALUE=DATE-TIME:20200609T180000Z
+DESCRIPTION:This is an online seminar hosted by: NeuroDev Disorders\n\nSpeaker: Prof Gina Turrigiano | Brandeis University\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:76cf56506180e8a93166660458569295d38d8dff933491cd6f8b145e37daa921
+SUMMARY:Prof Ethan M. Goldberg, MD, PhD
+DTSTART;VALUE=DATE-TIME:20200317T120000Z
+DTEND;VALUE=DATE-TIME:20200317T130000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Ethan M. Goldberg, MD, PhD | The Children's Hospital of Philadelphia\n\nSeminar Title: Cellular/circuit dysfunction in a model of Dravet syndrome - a severe childhood epilepsy\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:3925845132e6659085f36e04542e99bc697160c5259befcd7afd1e5755729923
+SUMMARY: Benjamin Dichter, Ryan Ly, Andrew Tritt, Pam Baker, and Oliver Rübel
+DTSTART;VALUE=DATE-TIME:20200512T153000Z
+DTEND;VALUE=DATE-TIME:20200512T123000Z
+DESCRIPTION:This is an online seminar\n\nSpeaker:  Benjamin Dichter, Ryan Ly, Andrew Tritt, Pam Baker, and Oliver Rübel | Lawrence Berkeley National Laboratory, CatalystNeuro, Allen Institute for Brain Science, and The Kavli Foundation\n\nSeminar Title: 8th NEURODATA Without Borders Workshop\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:72f8cd126d910fbe50996905f0a6fdcdfaacd229aae9e1f587a834d593279c1a
+SUMMARY:Prof Rafael Yuste
+DTSTART;VALUE=DATE-TIME:20200512T120000Z
+DTEND;VALUE=DATE-TIME:20200512T150000Z
+DESCRIPTION:This is an online seminar hosted by: IST Neuroscience\n\nSpeaker: Prof Rafael Yuste | Columbia University\n\nSeminar Title: Playing the piano with the cortex: role of neuronal ensembles and pattern completion in perception\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:4270bc4ff4b39307f8239dd8b260e005a95504219aae8ac751006dd37817ca24
+SUMMARY:Drs M. Carandini, A. Falkner, R. Froemke, K. Harris, K. Kuchibhotla, M. Mathis,  S. Solla, & G. Turrigiano
+DTSTART;VALUE=DATE-TIME:20200512T134500Z
+DTEND;VALUE=DATE-TIME:20200512T154500Z
+DESCRIPTION:This is an online seminar hosted by: Neuro for Kosovo\n\nSpeaker: Drs M. Carandini, A. Falkner, R. Froemke, K. Harris, K. Kuchibhotla, M. Mathis,  S. Solla, & G. Turrigiano | Brandeis, EPFL, Johns Hopkins, Northwestern, NYU,  Princeton, & UCL\n\nSeminar Title: Xheladin & Xhufe Morina Foundation Conference\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:7cfa9faa4f243f483fab112bca2513bc67c2263628a112f79a3448beefe08397
+SUMMARY:Dr Johannes Felsenberg
+DTSTART;VALUE=DATE-TIME:20200512T130000Z
+DTEND;VALUE=DATE-TIME:20200512T160000Z
+DESCRIPTION:This is an online seminar hosted by: Toulouse Neurobehaviour\n\nSpeaker: Dr Johannes Felsenberg | Friedrich Miescher Institute for Biomedical Research\n\nSeminar Title: Re-evaluation of learned behavior in Drosophila melanogaster\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:775ab13c664720216f86cd2acef4504016a4816d147d4dc18503006935b8a496
+SUMMARY: André Maia Chagas
+DTSTART;VALUE=DATE-TIME:20200512T150000Z
+DTEND;VALUE=DATE-TIME:20200512T170000Z
+DESCRIPTION:This is an online seminar hosted by: SONA\n\nSpeaker:  André Maia Chagas | University of Sussex\n\nSeminar Title: Open Neuroscience: Challenging scientific barriers with Open Source & Open Science tools\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:e8c9eb4ca6f5d82839bf4203cfccf0fd0e99e18aaac2e7297352a2c17abe6753
+SUMMARY:Prof Christopher Walsh
+DTSTART;VALUE=DATE-TIME:20200526T150000Z
+DTEND;VALUE=DATE-TIME:20200526T180000Z
+DESCRIPTION:This is an online seminar hosted by: NeuroDev Disorders\n\nSpeaker: Prof Christopher Walsh | Harvard Medical School\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:b6d4b6bd5528ddb16eeaa9823217bd29b3477f05277248c8e14f3c54164f3088
+SUMMARY:Prof Joan E. Strassmann
+DTSTART;VALUE=DATE-TIME:20200505T130000Z
+DTEND;VALUE=DATE-TIME:20200505T160000Z
+DESCRIPTION:This is an online seminar hosted by: Toulouse Neurobehaviour\n\nSpeaker: Prof Joan E. Strassmann | Washington University\n\nSeminar Title: Kin selection, relatedness and conflict in the social amoeba Dictyostelium discoideum\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:f30341d948c3df5370ebb051f750b5cc05fb2378e3038a16bfc58b5703045c4a
+SUMMARY:Prof Andre Longtin
+DTSTART;VALUE=DATE-TIME:20200415T130000Z
+DTEND;VALUE=DATE-TIME:20200415T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Andre Longtin | University of Ottawa\n\nSeminar Title: Inferring Brain Rhythm Circuitry and Burstiness\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:6a8a55f761adfd2ecd71a05b44c300a4eab72f0adb8efc0ef9a9fa6212492252
+SUMMARY:Prof Sara Solla
+DTSTART;VALUE=DATE-TIME:20200429T130000Z
+DTEND;VALUE=DATE-TIME:20200429T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Sara Solla | Northwestern University\n\nSeminar Title: Neural manifolds for the stable control of movement\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:f70583d1e9f1bf4d73ba83c8caa966f31a6935b7d7b123511dbefead592381ea
+SUMMARY:Prof Kanaka Rajan
+DTSTART;VALUE=DATE-TIME:20200408T130000Z
+DTEND;VALUE=DATE-TIME:20200408T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Kanaka Rajan | Icahn School of Medicine at Mount Sinai\n\nSeminar Title: Recurrent network models of adaptive and maladaptive learning\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:bd58747aaea69b08b217a3579bd4595ceb91e9d1bbed69ff35b04181b45e8768
+SUMMARY:Dr Nicolas Schuck
+DTSTART;VALUE=DATE-TIME:20200729T130000Z
+DTEND;VALUE=DATE-TIME:20200729T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Dr Nicolas Schuck | MPI Berlin\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:4fb1a7b75531c038fa1e74ba76b8fa6bf32cfcc97d6b621becd8817844bffbbd
+SUMMARY:Prof Linda Smith
+DTSTART;VALUE=DATE-TIME:20200708T130000Z
+DTEND;VALUE=DATE-TIME:20200708T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Linda Smith | Indiana University\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:f758d40b9d34d5a9a295dbd1450fcebfd664f1527159edf429d36a35e99bf6dd
+SUMMARY:Dr Vanessa Ruta
+DTSTART;VALUE=DATE-TIME:20200610T160000Z
+DTEND;VALUE=DATE-TIME:20200610T130000Z
+DESCRIPTION:This is an online seminar hosted by: Invertebrate Neuroecology\n\nSpeaker: Dr Vanessa Ruta | Rockefeller University\n\nSeminar Title: Neural circuit mechanisms of behavioral evolution\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:d8244dd2fe9086d7ca270af57af4f79b7b47b170415ab02995489d968cbf6e92
+SUMMARY:Prof E.J. Chichilnisky
+DTSTART;VALUE=DATE-TIME:20200617T160000Z
+DTEND;VALUE=DATE-TIME:20200617T180000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Prof E.J. Chichilnisky | Stanford University\n\nSeminar Title: Toward a High-fidelity Artificial Retina for Vision Restoration\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:e99d817ee197bc5e09fdecac54d32e4b1476eb8f18b3f7046e17b016b0b9dff4
+SUMMARY:Dr Benjamin de Bivort
+DTSTART;VALUE=DATE-TIME:20200624T160000Z
+DTEND;VALUE=DATE-TIME:20200624T130000Z
+DESCRIPTION:This is an online seminar hosted by: Invertebrate Neuroecology\n\nSpeaker: Dr Benjamin de Bivort | Harvard\n\nSeminar Title: Functional and structural loci of individuality in the Drosophila olfactory circuit\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:100ff7df12ba941f089d2280ed8734562f1c49ae3d5c13692cd7b1265df39b3c
+SUMMARY:Dr Lenka Zdeborová
+DTSTART;VALUE=DATE-TIME:20200624T130000Z
+DTEND;VALUE=DATE-TIME:20200624T150000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Dr Lenka Zdeborová | CNRS & CEA Saclay\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:77d45913d87c84d5c01b4de8fb05efa67a881ff77c0fe5dcfba606bfb0277c5d
+SUMMARY:Prof Penelope Lewis
+DTSTART;VALUE=DATE-TIME:20200318T130000Z
+DTEND;VALUE=DATE-TIME:20200318T140000Z
+DESCRIPTION:This is an online seminar hosted by: Oxford Neurotheory\n\nSpeaker: Prof Penelope Lewis | Cardiff University Brain Research Imaging Centre\n\nSeminar Title: Sleep, semantic memory, and creative problem solving\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:11907243dd6135614fb6dd184426f584ed36bedd265fad6ae646ad7022677776
+SUMMARY:Dr John Tuthill
+DTSTART;VALUE=DATE-TIME:20200513T160000Z
+DTEND;VALUE=DATE-TIME:20200513T130000Z
+DESCRIPTION:This is an online seminar hosted by: Invertebrate Neuroecology\n\nSpeaker: Dr John Tuthill | University of Washington\n\nSeminar Title: Neural mechanisms of proprioception and motor control in Drosophila\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:37de25b48e2fa8324b8eab4fb015209e9cbd2c162221ef1152dca8b92e64d3f7
+SUMMARY:Prof Joshua Jacobs
+DTSTART;VALUE=DATE-TIME:20200513T140000Z
+DTEND;VALUE=DATE-TIME:20200513T170000Z
+DESCRIPTION:This is an online seminar hosted by: Bernstein Center Berlin\n\nSpeaker: Prof Joshua Jacobs | Columbia University\n\nSeminar Title: Revealing the neural basis of human memory with direct recordings of place and grid cells and traveling waves\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:5e5d17c3883f1912d8a45f544babf8a6f5d0b3ceeacdc1b31e8c001409177de6
+SUMMARY:Dr Michael Reiser
+DTSTART;VALUE=DATE-TIME:20200520T160000Z
+DTEND;VALUE=DATE-TIME:20200520T130000Z
+DESCRIPTION:This is an online seminar hosted by: Invertebrate Neuroecology\n\nSpeaker: Dr Michael Reiser | Janelia Research Campus\n\nSeminar Title: Motion vision in Drosophila: from single neuron computation to behavior\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:9c05e7b0bb4b1199a532923d8c3b771c5acd5d6c9755788abe96b72056a4c471
+SUMMARY:Prof Tim Gollisch
+DTSTART;VALUE=DATE-TIME:20200520T130000Z
+DTEND;VALUE=DATE-TIME:20200520T150000Z
+DESCRIPTION:This is an online seminar hosted by: Sussex Visions\n\nSpeaker: Prof Tim Gollisch | University of Goettingen\n\nSeminar Title: Natural stimulus encoding in the retina with linear and nonlinear receptive fields\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:3984e7bbd639d9097100981627703449b3058033bd632bb0c2299df6e8d92462
+SUMMARY:Dr Deborah Gordon
+DTSTART;VALUE=DATE-TIME:20200527T160000Z
+DTEND;VALUE=DATE-TIME:20200527T130000Z
+DESCRIPTION:This is an online seminar hosted by: Invertebrate Neuroecology\n\nSpeaker: Dr Deborah Gordon | Stanford University\n\nSeminar Title: The ecology of collective behavior\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+BEGIN:VEVENT
+UID:d6f2585d6f7fefcc473760693707409877523f2e0d4064a0075927b3574a2e25
+SUMMARY:Dr Katherine Nagel
+DTSTART;VALUE=DATE-TIME:20200506T160000Z
+DTEND;VALUE=DATE-TIME:20200506T130000Z
+DESCRIPTION:This is an online seminar hosted by: Invertebrate Neuroecology\n\nSpeaker: Dr Katherine Nagel | New York University\n\nSeminar Title: Algorithms and circuits for olfactory navigation in walking Drosophila\n\nFor more details on this event (summary text, teleconforencing link, etc), please check on the website www.worldwideneuro.com
+END:VEVENT
+END:VCALENDAR

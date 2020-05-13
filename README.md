@@ -36,7 +36,6 @@
 
 Programming Languages: HTML, CSS, JavaScript, and Python
 Server Details: Ubuntu 18.04, Amazon Web Services
-
 <br/><br/>
 
 ## Feel like contributing? ✏️

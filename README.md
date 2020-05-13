@@ -6,9 +6,9 @@
   <p align="center">
 </p>
   <a href="https://worldwideneuro.com"><img src="website_preview.png" width=850></a>
-  
+  <br/><br/>
   <p>
-    <strong><i>Scientific seminars from all over the world</i></strong>
+    <strong>Scientific seminars from all over the world</strong>
 </p>
 
   <p>

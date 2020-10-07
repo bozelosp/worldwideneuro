@@ -753,7 +753,7 @@ a.anchor:focus {
 			</div>
 
 			<div id='follow-us-on-twitter'>
-				<a class="twitter-follow-button" href="https://twitter.com/worldwideneuro" data-show-count="false">
+				<a class="twitter-follow-button" href="https://twitter.com/worldwideneuro" data-show-count="true">
 				Follow @WorldWideNeuro
 				</a>
 			</div>
@@ -907,7 +907,7 @@ a.anchor:focus {
 
 						<div class="sponsors-row" style="padding-top:0.25rem;">
 							<a href="https://elifesciences.org/"><img style="position:relative;width:85%;padding:0.125rem;padding-left:0.38rem;padding-right:55%;border:1px solid;border-color:#ebeaea;background-color:#ebeaea;border-radius:12px;" class='sponsors-item' src="sponsors_elife.png"></img></a>
-							<a href="https://journals.plos.org/plosbiology/"><img style="width:85%;padding:0.125rem;padding-left:67%;padding-right:0.75rem;border:1px solid;border-color:#ebeaea;background-color:#ebeaea;border-radius:12px;" class='sponsors-item' src="sponsors_plos.png"></img></a>
+							<a href="https://journals.plos.org/plosbiology/"><img style="position:relative;width:85%;padding:0.6rem;padding-left:0.8rem;padding-right:30%;border:1px solid;border-color:#ebeaea;background-color:#ebeaea;border-radius:12px;" class='sponsors-item' src="sponsors_PLOS_bio.png"></img></a>
 							<a href="https://fenskavlinetwork.org/"><img style="margin-left:2%;width:32.5%;padding-top:0;padding-bottom:0.1rem;" class='sponsors-item' src="sponsors_FENS-KAVLI.png"></img></a>
 							<a href="https://www.phenosys.com/"><img style="margin-left:10%;width:40%;padding:0.25rem;" class='sponsors-item' src="sponsors_phenosys.jpg"></img></a>
 							<!--a href="https://institutducerveau-icm.org/en/"><img style="position:relative;width:85%;padding:0.5rem;padding-left:1.1rem;padding-right:52.5%;" class='sponsors-item' src="icm_paris.png"></img></a-->
@@ -957,10 +957,7 @@ const request_data = async () => {
 	var urlParams = new URLSearchParams(queryString);
 	var this_seminar_series_name = urlParams.get('name');
 
-	console.log(this_seminar_series_name);
 	this_seminar_series_name=this_seminar_series_name.replace(/_/g,' ');
-
-	console.log(this_seminar_series_name);
 
 	document.title=this_seminar_series_name;
 	
@@ -1399,6 +1396,13 @@ const request_data = async () => {
 			html_text+='<div class="seminar-abstract">' + abstract_text  + '</div>';
 		}
 
+		let topic_tags=get_split_trim(d['topic_tags']);
+		topic_tags=topic_tags.map(d => '<div class="seminar-tags" style="background-color:'+topic_tags_to_colors[d]+';">'+d+'</div>');
+
+		//html_text+='<p class="seminar-tags-container">';
+		html_text+=topic_tags.join(' ');
+		//html_text+='</p>';
+
 		html_text+='</header>' ;
 		
 		return html_text;
@@ -1639,23 +1643,29 @@ const request_data = async () => {
 		Object.values(data).forEach(d => {
 			if(d['topic_tags']!=''){
 				try {
-					get_split_trim(d['topic_tags']).map(i => { if (!topic_tags.includes(i)){topic_tags.push(i);}});
+					get_split_trim(d['topic_tags']).map(i => { 
+						topic_tags.push(i);
+						if (!topic_tags.includes(i)){
+							topic_tags.push(i);
+						}
+					});
 				} catch {}
 			}
 		});
+
 		let topic_tags_count=new Object();
 		topic_tags.forEach( d => {
 				topic_tags_count[d] = topic_tags_count[d]? ++ topic_tags_count[d]: 1;
 			});
 
-		let allowed_topic_tags=topic_tags.filter(onlyUnique).filter(d => topic_tags_count[d]>1);
+		let allowed_topic_tags=topic_tags.filter(onlyUnique);
 
 		allowed_topic_tags=allowed_topic_tags.sort(function(a, b) {
 			return topic_tags_count[b] - topic_tags_count[a]
 		});
 
 		allowed_topic_tags.unshift('all');
-
+		
 		let topic_tags_to_colors = new Object() ;
 
 		let step = topic_colors.length / allowed_topic_tags.length ;
@@ -1663,11 +1673,10 @@ const request_data = async () => {
 		for(i=0; i<allowed_topic_tags.length; i++){
 			topic_tags_to_colors[allowed_topic_tags[i]]=topic_colors[Math.floor(i*step)];
 		}
-
 		topics_not_yet_assigned_w_color=topic_tags.filter(onlyUnique).filter(d=> !(allowed_topic_tags.includes(d)));
-
+		
 		topics_not_yet_assigned_w_color.forEach(d => topic_tags_to_colors[d]='#13b2a8');
-
+		
 		topic_tags_to_colors['all']='#c9c9c9';
 
 		return [allowed_topic_tags,topic_tags_to_colors];

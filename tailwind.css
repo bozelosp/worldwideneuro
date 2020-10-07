@@ -1,0 +1,244 @@
+.bg-white {
+	background-color: #fff
+}
+
+.inline {
+	display: inline
+}
+
+.items-center {
+	align-items: center
+}
+
+.flex-shrink-0 {
+	flex-shrink: 0
+}
+
+.font-firago {
+	font-family: FiraGO, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji
+}
+
+.font-medium {
+	font-weight: 500
+}
+
+.font-semibold {
+	font-weight: 600
+}
+
+.font-bold {
+	font-weight: 700
+}
+
+.h-4\.5 {
+	height: 1.18rem
+}
+
+.leading-none {
+	line-height: 1
+}
+
+.leading-normal {
+	line-height: 1.4
+}
+
+.leading-snugish {
+	line-height: 1.37
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto
+}
+
+.mb-1 {
+	margin-bottom: 0.25rem
+}
+
+.mb-2 {
+	margin-bottom: 0.5rem
+}
+
+.mb-3 {
+	margin-bottom: 0.75rem
+}
+
+.mb-4 {
+	margin-bottom: 1.0rem
+}
+
+.mb-5 {
+	margin-bottom: 1.25rem
+}
+
+.mb-6 {
+	margin-bottom: 1.5rem
+}
+
+.mb-7 {
+	margin-bottom: 1.75rem
+}
+
+.mb-8 {
+	margin-bottom: 2.0rem
+}
+
+.mt-1 {
+	margin-top: 0.25rem
+}
+
+.mt-2 {
+	margin-top: 0.5rem
+}
+
+.mt-3 {
+	margin-top: 0.75rem
+}
+
+.mt-4 {
+	margin-top: 1.0rem
+}
+
+.mt-5 {
+	margin-top: 1.25rem
+}
+
+.mt-6 {
+	margin-top: 1.5rem
+}
+
+.mt-7 {
+	margin-top: 1.75rem
+}
+
+.mt-8 {
+	margin-top: 2.0rem
+}
+
+.mr-5 {
+	margin-right: 1.35rem
+}
+
+.mb-6 {
+	margin-bottom: 1.8rem
+}
+
+.mt-8 {
+	margin-top: 3.5rem
+}
+
+.mt-1\.5 {
+	margin-top: .4rem
+}
+
+.mr-1\.5 {
+	margin-right: .4rem
+}
+
+.-ml-7 {
+	margin-left: -1.6rem
+}
+
+.-mt-0\.7 {
+	margin-top: -.2rem
+}
+
+.-mt-0\.8 {
+	margin-top: -.22rem
+}
+
+.-mt-1\.5 {
+	margin-top: -.4rem
+}
+
+.p-6 {
+	padding: 1.5rem
+}
+
+.pl-7 {
+	padding-left: 1.6rem
+}
+
+.relative {
+	position: relative
+}
+
+.fill-current {
+	fill: currentColor
+}
+
+.text-white {
+	color: #fff
+}
+
+.text-gray-550 {
+	color: #8e9cb4
+}
+
+.text-gray-600 {
+	color: #718096
+}
+
+.text-gray-650 {
+	color: #68778d
+}
+
+.text-gray-700 {
+	color: #4a5568
+}
+
+.text-gray-750 {
+	color: #44505f
+}
+
+.group:hover .group-hover\:text-gray-700 {
+	color: #4a5568
+}
+
+.text-sm {
+	font-size: 12.5px
+}
+
+.text-sm2 {
+	font-size: 13.5px
+}
+
+.text-md {
+	font-size: 16.25px
+}
+
+.text-md2 {
+	font-size: 17.0px
+}
+
+.text-lg {
+	font-size: 18.25px
+}
+
+.text-lg2 {
+	font-size: 19.0px
+}
+
+.text-xl {
+	font-size: 21.25px
+}
+
+.text-xl2 {
+	font-size: 22.0px
+}
+
+.tracking-widest {
+	letter-spacing: .1em
+}
+
+.w-5 {
+	width: 1.25rem
+}
+
+.w-4\.5 {
+	width: 1.18rem
+}
+
+.w-3\.5 {
+	width: 0.8rem
+}

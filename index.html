@@ -181,7 +181,7 @@ svg {
 	top: 3.25rem;
 }
 
-#scroll-menu {
+#top-menu {
 
 	z-index: 1000;
 	position: fixed;
@@ -208,6 +208,14 @@ svg {
 
 }
 
+#top-menu::-webkit-scrollbar {
+	display: none;
+}
+
+#top-menu {
+	-ms-overflow-style: none;
+}
+
 .menu-item {
 
 	display: inline-block;
@@ -226,7 +234,7 @@ svg {
 		font-weight: 500;
 		font-size: 1.25rem;
 		padding-right: 1.45rem;
-		padding-left: 1.45rem;
+		padding-left: 2.25rem;
 		letter-spacing: 0.15rem;
 	}
 }
@@ -253,7 +261,7 @@ a.anchor:focus {
 }
 
 @media (max-width: 830px) {
-	#scroll-menu {
+	#top-menu {
 		font-weight: 600; 
 	}
 	#page-container {
@@ -349,6 +357,21 @@ a.anchor:focus {
 	border-style: solid;
 	border-width: 2px;
 
+	-webkit-animation: bgcolorchange 2s infinite; /* Chrome, Safari, Opera */ 
+	animation: 2s infinite bgcolorchange;
+
+}
+
+@keyframes bgcolorchange {
+	0% { border-color: white; }
+	50% { border-color: #40598a; }
+	100% { border-color: white; }
+}
+
+@-webkit-keyframes bgcolorchange {
+	0% { border-color: white; }
+	50% { border-color: #40598a; }
+	100% { border-color: white; }
 }
 	
 #search-bar-input {
@@ -395,7 +418,7 @@ a.anchor:focus {
 }
 
 #selected-timezone {
-	margin-bottom: 0.1rem;
+	margin-bottom: 1rem;
 	position: relative;
 	height: 1.85rem;
 	vertical-align: middle;
@@ -615,10 +638,6 @@ a.anchor:focus {
 	max-width: 100%;
 }
 
-.sponsors-item {
-	
-}
-
 .logos-row {
 	display: flex;
 	flex-wrap: wrap;
@@ -658,6 +677,7 @@ a.anchor:focus {
 #page-container {
 	max-width: 80%;
 	margin: auto;
+	overflow-x:hidden;
 }
 
 @media (max-width:1020px) {
@@ -681,6 +701,44 @@ a.anchor:focus {
 	cursor: pointer;
 }
 
+.date_label {
+	display: inline-block;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 1.95rem;
+	font-style: italic;
+	letter-spacing: 0.35rem;
+	word-spacing: 0.775rem;
+
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+
+	line-height: 2.825rem;
+
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-appearance: none;
+
+	border: none;
+	border-radius: 1rem;
+
+	background-image: url('date_label_stars.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: inherit;
+	background-attachment: cover;
+	z-index: 5;
+}
+
 </style>
 
 <body>
@@ -692,14 +750,13 @@ a.anchor:focus {
 
 	<main class="font-firago">
 
-		<div id="scroll-menu">
+		<div id="top-menu">
 			<a class="menu-item" href="#upcoming-talks-section">UPCOMING</a>
 			<a class="menu-item" href="#past-talks-section">PAST</a>
 			<a class="menu-item" href="#seminars-calendar-section">CALENDAR</a>
 			<a class="menu-item" href="#seminar-series-hosts-section">SERIES & HOSTS</a>
 			<a class="menu-item" href="#want-to-become-a-host-section">JOIN US</a>
-			<a class="menu-item" href="#partners-collaborators-section">PARTNERS</a>
-			<!--a class="menu-item" href="#sponsors-section">SPONSORS</a-->
+			<a class="menu-item" href="#sponsors-section">SPONSORS</a>
 			<a class="menu-item" href="#neuroscience-seminars-online-section">ABOUT</a>
 		</div>
 
@@ -707,12 +764,12 @@ a.anchor:focus {
 		<div  id="page-container">
 		
 			<div id="banner">
-				<img id="hero-image" src="banner.jpg"></img>
+				<img id="hero-image" src="https://www.worldwideneuro.com/banner.jpg"></img>
 				<div id="website-title">World Wide Neuro</div>
 			</div>
 
 			<div id='follow-us-on-twitter'>
-				<a class="twitter-follow-button" href="https://twitter.com/worldwideneuro" data-show-count="false">
+				<a class="twitter-follow-button" href="https://twitter.com/worldwideneuro" data-show-count="true">
 				Follow @WorldWideNeuro
 				</a>
 			</div>
@@ -722,7 +779,7 @@ a.anchor:focus {
 				<!--img id="clear-search-bar-input" src="clear.svg"></img-->
 			</div>
 
-			<div class="container sm:container md:container lg:container-centered xl:container-centered" id="tags-container"></div>
+			<div class="container" id="tags-container"></div>
 		
 			<!-- Column -->
 			<div class="col-count-1 sm:col-count-2 md:col-count-2 lg:col-count-2 xl:col-count-2 col-gap-md">
@@ -747,6 +804,10 @@ a.anchor:focus {
 						<h2 class="section-title">
 							PAST SEMINARS 
 						</h2>
+						<div id="watch-filter" style="display:none;">
+							<span class="watch-filter-item" id="watch-all">ALL</span>
+							<span class="watch-filter-item" id="watch-again">WATCH AGAIN</span>
+						</div>
 						<div id='archive-talks'></div>
 					</section>
 
@@ -754,20 +815,22 @@ a.anchor:focus {
 
 				<div id="second-column">
 
-					<!--a class="anchor" id="sponsors-section"></a>
+					<a class="anchor" id="sponsors-section"></a>
 					<section class="section-element">
 
-						<h2 class="section-title" style="padding-bottom:1rem;">
-							SPONSORS
+						<h2 class="section-title" style="padding-bottom:0.1rem;">
+							SPONSORED BY
 						</h2>
 
 						<div class="sponsors-row" style="padding-top:0.25rem;">
-							<img style="width:85%;padding:0.125rem;padding-left:0.38rem;padding-right:55%;border:1px solid;border-color:#ebeaea;background-color:#ebeaea;border-radius:12px;" class='sponsors-item' src="sponsors_elife.png"></img>
-							<img style="margin-left:2%;width:32.5%;padding-top:0;padding-bottom:0.1rem;" class='sponsors-item' src="sponsors_FENS-KAVLI.png"></img>
-							<img style="margin-left:10%;width:40%;padding:0.25rem;" class='sponsors-item' src="sponsors_phenosys.jpg"></img>
+							<a href="https://elifesciences.org/"><img style="position:relative;width:85%;padding:0.125rem;padding-left:0.38rem;padding-right:55%;border:1px solid;border-color:#ebeaea;background-color:#ebeaea;border-radius:12px;" class='sponsors-item' src="sponsors_elife.png"></img></a>
+							<a href="https://journals.plos.org/plosbiology/"><img style="position:relative;width:85%;padding:0.6rem;padding-left:0.8rem;padding-right:30%;border:1px solid;border-color:#ebeaea;background-color:#ebeaea;border-radius:12px;" class='sponsors-item' src="sponsors_PLOS_bio.png"></img></a>
+							<a href="https://fenskavlinetwork.org/"><img style="margin-left:2%;width:32.5%;padding-top:0;padding-bottom:0.1rem;" class='sponsors-item' src="sponsors_FENS-KAVLI.png"></img></a>
+							<a href="https://www.phenosys.com/"><img style="margin-left:10%;width:40%;padding:0.25rem;" class='sponsors-item' src="sponsors_phenosys.jpg"></img></a>
+							<!--a href="https://institutducerveau-icm.org/en/"><img style="position:relative;width:85%;padding:0.5rem;padding-left:1.1rem;padding-right:52.5%;" class='sponsors-item' src="icm_paris.png"></img></a-->
 						</div>
 						
-					</section-->
+					</section>
 
 					<a class="anchor" id="neuroscience-seminars-online-section"></a>
 					<section class="section-element">
@@ -815,7 +878,7 @@ a.anchor:focus {
 						<ul class="leading-normal text-gray-700 pl-7">
 							<div id="seminar-series-hosts"></div>
 							<li class="mt-1.5">
-								<svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600" viewbox="0 0 17 17">
+								<svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0" viewbox="0 0 17 17" style="color:#8c95a2;">
 									<path class="fill-current" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z" />
 								</svg><span style="white-space:pre;font-size:1.2rem;">   your lab?</span><a style="font-size:1.2rem;" href="mailto: tim.vogels@ist.ac.at"> Contact us</a>
 							</li>
@@ -850,29 +913,6 @@ a.anchor:focus {
 
 					</section>
 
-					<section class="section-element" id='other-resources-section'>
-
-						<h2 class="section-title">
-							OTHER RESOURCES
-						</h2>
-
-						<ul style="font-size:1.2rem;" class="leading-normal text-gray-700 pl-7">
-							<li style="padding-bottom:1rem;white-space:pre;"><svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600" viewbox="0 0 17 17">
-									<path class="fill-current" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z" />
-								</svg><a class="other-resources" href="http://martingiurfa.simplesite.com/">   Neuroscience in Times of Quarantine</a></li>
-							<li style="padding-bottom:1rem;white-space:pre;"><svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600" viewbox="0 0 17 17">
-									<path class="fill-current" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z" />
-								</svg><a class="other-resources" href="https://www.cureparkinsons.org.uk/pages/category/3p-seminars">   Parkinson Postdoc Program Seminar Series</a></li>
-							<li style="padding-bottom:1rem;white-space:pre;"><svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600" viewbox="0 0 17 17">
-									<path class="fill-current" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z" />
-								</svg><a class="other-resources" href="https://info.inscopix.com/inscopix-insights-webinar-series-david-anderson-the-neural-circuit-basis-of-social-behavior">   Inscopix Webinar series</a></li>
-							<li style="white-space:pre;"><svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600" viewbox="0 0 17 17">
-									<path class="fill-current" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z" />
-								</svg><a class="other-resources" href="https://www.ntc.columbia.edu/symposium/">   2020 NTC Symposium: Optogenetics</a></li>
-						</ul>
-
-					</section>
-
 					<section class="section-element" id='about-us-section'>
 						<h2 class="section-title" style="padding-bottom:0.9rem;">
 							ABOUT THIS WEBSITE
@@ -882,29 +922,23 @@ a.anchor:focus {
 							Designed and implemented by <a href="https://twitter.com/tpvogels">@TPVogels</a> and <a href="https://twitter.com/bozelosp">@BozelosP</a> at <a href="https://vogelslab.org">Vogels Lab</a>
 						</p>
 					</section>
+						
+					</section>
 
-					<a class="anchor" id="partners-collaborators-section"></a>
 					<section class="section-element">
 
 						<h2 class="section-title">
-							PARTNERS & COLLABORATORS
+							TWITTER FEED
 						</h2>
+						<a class="twitter-timeline" data-lang="en" data-height="8500" href="https://twitter.com/worldwideneuro?ref_src=twsrc%5Etfw">Tweets by worldwideneuro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						
+					</section>
 
-						<div class="logos-row" style="padding-top:1rem;">
-							<div class="logos-column">
-								<img class='logos' src="logos_oxford_uni.jpg"></img>
-								<img class='logos' src="logos_ist_austria.jpg"></img>
-								<img class='logos' src="logos_tubingen_uni.png"></img>
-								<img class='logos' src="logos_princeton_uni.jpg"></img>
-								<img class='logos' src="logos_francis_crick_institute.jpg"></img>
-							</div>
-							<div class="logos-column">
-								<img class='logos' src="logos_geneva_uni.jpg"></img>
-								<img class='logos' src="logos_sheffield_uni.jpg"></img>
-								<img class='logos' src="logos_sussex_uni.jpg"></img>
-								<img class='logos' src="logos_oxford_uni_cortex_club.jpg"></img>
-							</div>
-						</div>
+					<section class="section-element" style="display:none">
+
+						<h2 class="section-title">
+							SPACE CATS
+						</h2>
 						
 					</section>
 
@@ -924,6 +958,8 @@ a.anchor:focus {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.28/moment-timezone-with-data.min.js"></script> 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
 <script type="text/javascript" src='v-calendar.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+
 <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
 	t = window.twttr || {};
@@ -954,10 +990,8 @@ const request_data = async () => {
 	var response = await fetch('seminar_data.json?nocache=123');
 	var seminar_data = await response.json();
 
-	var response = await fetch('seminar_hosts.json?nocache=123');
+	var response = await fetch('seminar_series_data.json?nocache=587');
 	var seminar_hosts = await response.json();
-
-	//if (viewport_width.matches) {
 
 	var response =  await fetch('flexsearch_index.json');
 	var flexsearch_index = await response.text();
@@ -976,7 +1010,8 @@ const request_data = async () => {
 
 	search_index.import(flexsearch_index, {index: true, doc: false});
 
-	//}
+	var context = document.querySelector("#first-column");
+	var instance = new Mark(context);
 
 	var response = await fetch('topic_colors.json');
 	var json_object = await response.json();
@@ -1047,26 +1082,47 @@ const request_data = async () => {
 		});
 	});
 
-	//if (viewport_width.matches) {
-
 	document.getElementById('search-bar').style.display='block';
 	document.getElementById('search-bar-input').addEventListener('keyup',  event => {
-			let my_query=document.getElementById('search-bar-input').value.trim() ;
-			if(my_query!=''){
-				let query_results = search_index.search(my_query);
-				search_query_filter(query_results);
-				//document.getElementById('clear-search-bar-input').style.opacity=0.5;
-			} else {
-				search_query_filter(Object.keys(seminar_data));
-				//document.getElementById('clear-search-bar-input').style.opacity=0;
+		let my_query=document.getElementById('search-bar-input').value.trim() ;
+		if(my_query!=''){
+			let query_results = search_index.search(my_query);
+			search_query_filter(query_results);
+			document.getElementById('tags-container').style.display='none';
+			document.getElementById('hero-image').style.height='6.65rem';
+			document.getElementById('website-title').style.top='3rem';
+			document.getElementById('hero-image').style.width='50%';
+			document.getElementById('hero-image').style.left='25%';
+			let date_labels=document.getElementsByClassName('date_label');
+			for (index = 0; index < date_labels.length; index++) {  
+				date_labels[index].style.display='none';
 			}
-		});
-
-	//}
+			//document.getElementById('clear-search-bar-input').style.opacity=0.5;
+		} else {
+			search_query_filter(Object.keys(seminar_data));
+			document.getElementById('tags-container').style.display='block';
+			document.getElementById('hero-image').style.height='12rem';
+			document.getElementById('website-title').style.top='5.25rem';
+			document.getElementById('hero-image').style.width='70%';
+			document.getElementById('hero-image').style.left='15%';
+			let date_labels=document.getElementsByClassName('date_label');
+			for (index = 0; index < date_labels.length; index++) {  
+				date_labels[index].style.display='block';
+			}
+			//document.getElementById('clear-search-bar-input').style.opacity=0;
+		}
+		if (my_query.length>=4) {
+			instance.unmark();
+			instance.mark(my_query);
+		} else if (my_query.length==0) {
+			instance.unmark();
+		}
+	});
 
 	document.getElementById('detected-timezone').innerHTML='Seminar dates & times are specified in the following timezone:';
 
 	let seminar_series_host_keys=Object.keys(seminar_hosts);
+	seminar_series_host_keys=seminar_series_host_keys.filter( d => seminar_hosts[d]['Organized by'].length>0 );
 	seminar_series_host_keys=seminar_series_host_keys.sort(function(a, b) {
 			a = a.toUpperCase();
 			b = b.toUpperCase();
@@ -1103,14 +1159,13 @@ const request_data = async () => {
 
 	create_calendar_view();
 
-	//document.querySelector('[aria-label="Wednesday, 29 April 2020"]').style['--dot-diameter']='3px';
-
 	function search_query_filter(query_results) {
 
-		Object.entries(seminar_data).forEach(function(d){
+		Object.keys(seminar_data).forEach(function(d){
 					
-			let this_seminar=document.getElementById('seminar-id-'+d[1]['seminar_id']);
-			query_results.includes(d[0]) ? this_seminar.style.display='block' :this_seminar.style.display='none' ;
+			let this_seminar=document.getElementById('seminar-id-'+d);
+
+			query_results.includes(d) ? this_seminar.style.display='block' :this_seminar.style.display='none' ;
 			
 		});
 
@@ -1119,6 +1174,7 @@ const request_data = async () => {
 	function filter_by_topic_or_host(topic_tags,topic_tags_to_colors,seminar_series_tags,actually_used_seminar_series_tags,seminar_series_tags_to_colors,data) {
 
 		let topic_buttons=topic_tags.map(d=> '<button class="button" style="background-color:'+topic_tags_to_colors[d]+';" id="'+d+'">'+d+'</button>');
+
 		topic_tag_buttons_html=topic_buttons.join('');
 
 		let seminar_series_buttons=actually_used_seminar_series_tags.map(d=> '<button class="button" style="background-color:'+seminar_series_tags_to_colors[d]+';" id="'+d+'">'+d+'</button>');
@@ -1140,14 +1196,33 @@ const request_data = async () => {
 							return false;
 						}
 					});
+
+					document.getElementById('hero-image').style.height='6.65rem';
+					document.getElementById('website-title').style.top='3rem';
+					document.getElementById('hero-image').style.width='50%';
+					document.getElementById('hero-image').style.left='25%';
+					let date_labels=document.getElementsByClassName('date_label');
+					for (index = 0; index < date_labels.length; index++) {  
+						date_labels[index].style.display='none';
+					}
+
 				} else {
 					filtered_seminars=Object.values(data) ;
+
+					document.getElementById('hero-image').style.height='12rem';
+					document.getElementById('website-title').style.top='5.25rem';
+					document.getElementById('hero-image').style.width='70%';
+					document.getElementById('hero-image').style.left='15%';
+					let date_labels=document.getElementsByClassName('date_label');
+					for (index = 0; index < date_labels.length; index++) {  
+						date_labels[index].style.display='block';
+					}
 				}
 
 				Object.values(data).forEach(function(d){
-					
+
 					let this_seminar=document.getElementById('seminar-id-'+d['seminar_id']);
-					filtered_seminars.includes(d) ? this_seminar.style.display='block' :this_seminar.style.display='none' ;
+					filtered_seminars.includes(d) ? this_seminar.style.display='block' : this_seminar.style.display='none' ;
 					
 				});
 
@@ -1183,6 +1258,52 @@ const request_data = async () => {
 
 	}
 
+	function figure_label_dates() { // THIS WEEK, NEXT WEEK, MONTH YEAR LABELS
+
+		label_dates_array=[];
+
+		let label_date_object = new Object();
+		let this_week=moment().startOf('week').add(0,'week').day("sunday");
+		label_date_object['date_label']='This Week';
+		label_date_object['date_moment']=this_week;
+		label_dates_array.push(label_date_object);
+
+		label_date_object = new Object();
+		let next_week=moment().startOf('week').add(1,'week').day("sunday");
+		label_date_object['date_label']='Next Week';
+		label_date_object['date_moment']=next_week;
+		label_dates_array.push(label_date_object);
+
+		label_date_object = new Object();
+		let two_weeks=moment().startOf('week').add(2,'week').day("sunday");
+		label_date_object['date_label']='Week After Next';
+		label_date_object['date_moment']=two_weeks;
+		label_dates_array.push(label_date_object);
+
+		Array(16).fill().forEach((_, i) => {
+			label_date_object = new Object();
+			let this_month_year=moment().startOf('month').add(i+1,'month');
+			let this_month_year_label=this_month_year.format("MMMM YYYY");
+			label_date_object['date_label']=this_month_year_label;
+			label_date_object['date_moment']=this_month_year;
+			label_dates_array.push(label_date_object);
+
+			/*label_date_object = new Object();
+			let this_month_year_mid=this_month_year.add(10,'days');
+			label_date_object['date_label']='MID ' + this_month_year_label;
+			label_date_object['date_moment']=this_month_year_mid;
+			label_dates_array.push(label_date_object);
+
+			label_date_object = new Object();
+			let this_month_year_mid=this_month_year.add(20,'days');
+			label_date_object['date_label']='MID ' + this_month_year_label;
+			label_date_object['date_moment']=this_month_year_mid;
+			label_dates_array.push(label_date_object);*/
+		});
+
+		return label_dates_array;
+	}
+
 	function update_live_status() {
 
 		upcoming_seminars_array.forEach( d => {
@@ -1191,7 +1312,15 @@ const request_data = async () => {
 
 			document.querySelector('#seminar-id-'+d['seminar_id']+' > h3 > .live-status').innerHTML = html_text_live_status ;
 
-			if (time_delta>=-3000 && time_delta<=1800){
+			let time_window;
+
+			if (hasWhiteSpace(d['password'])){
+				time_window=259200;
+			} else {
+				time_window=1800;
+			}
+
+			if (time_delta>=-3000 && time_delta<=time_window){				
 				if (d['password']!='') {
 					let html_text_passwd='<i> / 🔑 ' + d['password'] +'</i>';
 					document.querySelector('#seminar-id-'+d['seminar_id']+' > span.teleconf-info > span').innerHTML = html_text_passwd ;
@@ -1207,19 +1336,80 @@ const request_data = async () => {
 		let time_delta=get_moment_time_diff_between_seminar_time_and_now(d);
 
 		let html_text ;
-		if (time_delta>=0) {
-			html_text=get_human_readable_time_delta(time_delta);
-		} else if (time_delta<0 && time_delta>=-4350) {
-			html_text='';
-			html_text+='  <span style="color:red;white-space:pre;"> ● </span>';
-			html_text+='<span style="white-space:pre;font-weight:400;font-style:italic;"> Live</span>';
+		if (d['hosted_by']!='conference') {
+			
+			if (time_delta>=0) {
+				html_text=get_human_readable_time_delta(time_delta);
+			} else if (time_delta<0 && time_delta>=-4350) {
+				html_text='';
+				html_text+='  <span style="color:red;white-space:pre;"> ● </span>';
+				html_text+='<span style="white-space:pre;font-weight:400;font-style:italic;"> Live</span>';
+			}
+
+		} else {
+			if (time_delta>=0) {
+				html_text=get_human_readable_time_delta(time_delta);
+			}
 		}
 		return [html_text,time_delta];
 	}
 	
-	function fill_in_the_upcoming_void(d){
+	function fill_in_the_upcoming_void(upcoming_seminars_array){
 
-		let upcoming_text=d.map(d => prepare_seminar_element(d,'future'));
+		label_dates_array=figure_label_dates();
+
+		upcoming_seminars_and_time_labels=[ ...upcoming_seminars_array, ...label_dates_array];
+		upcoming_seminars_and_time_labels=upcoming_seminars_and_time_labels.sort(function(a,b){
+			let moment_object_d1,moment_object_d2; 
+			if (a['date_label']!== undefined) {
+				moment_object_d1=a['date_moment'];
+			} else {
+				moment_object_d1=parse_seminar_date_time(a);
+			}
+			if (b['date_label']!== undefined) {
+				moment_object_d1=b['date_moment'];
+			} else {
+				moment_object_d2=parse_seminar_date_time(b);
+			}
+			return moment_object_d1 - moment_object_d2 ; 
+
+		});
+
+		let remove_these_indexes=[];
+
+		for(i = 0; i < upcoming_seminars_and_time_labels.length-1; i++){
+			if (upcoming_seminars_and_time_labels[i]['date_label']!==undefined && upcoming_seminars_and_time_labels[i+1]['date_label']!==undefined) {
+
+				remove_these_indexes.push(i);
+
+			}
+		}
+
+		if (upcoming_seminars_and_time_labels[upcoming_seminars_and_time_labels.length-1]['date_label']!==undefined) {
+				remove_these_indexes.push(upcoming_seminars_and_time_labels.length-1);
+		}
+
+		let final_upcoming_seminars_and_time_labels=[];
+
+		for(i = 0; i < upcoming_seminars_and_time_labels.length; i++){
+			if (!remove_these_indexes.includes(i)){
+				final_upcoming_seminars_and_time_labels.push(upcoming_seminars_and_time_labels[i]);
+			}
+		}
+
+		let upcoming_text=final_upcoming_seminars_and_time_labels.map( d => {
+
+			if (d['date_label']!== undefined) {
+				
+				let label=d['date_label'];
+				let html_text='<div class="date_label">'+label+'</div>';
+				return html_text;
+			}
+			else {
+				let html_text=prepare_seminar_element(d,'future');
+				return html_text;
+			}
+		})
 		upcoming_text=upcoming_text.join('\n');
 
 		document.getElementById("upcoming-talks").innerHTML=upcoming_text;
@@ -1244,29 +1434,34 @@ const request_data = async () => {
 
 		if (is_it_past_or_future=='future'){
 			html_text+='<span class="live-status"></span></h3>';
-				
-			if (!d['seminar_link']=='') {
 
-				html_text+='<span class="teleconf-info">';
+			if (d['hosted_by']=='conference') {
+				html_text+='<span class="teleconf-info">This is a <span style="color:#1cd074"><b>conference</b></span> event — The date above ⬆️ is the registration deadline</span>';
+			} else {
+					
+				if (!d['seminar_link']=='') {
 
-				if (d['seminar_link'].includes('mailto:')) {
-					html_text+='Register to attend by <a href="'+d['seminar_link']+'?subject=Online seminar registration request">emailing 📩</a> the host<br>';
-				} else {
-					html_text+='Join via this<a href="'+d['seminar_link']+'"> link 🔗 </a>';
-					if (d['password']!=''){
-						html_text+='<span class="passwd"></span>';
+					html_text+='<span class="teleconf-info">';
+
+					if (d['seminar_link'].includes('mailto:')) {
+						html_text+='Register to attend by <a href="'+d['seminar_link']+'?subject=Online seminar registration request">emailing 📩</a> the host<br>';
+					} else {
+						html_text+='Join via this<a href="'+d['seminar_link']+'"> link 🔗 </a>';
+						if (d['password']!=''){
+							html_text+='<span class="passwd"></span>';
+						}
 					}
+
 				}
 
-			}
-
-			if (d['seminar_link'].includes('mailto:')) {
-				html_text+='<span class="calendar-event">Add this <a href="seminar_event_'+d['seminar_id']+'.ics">event</a> to your 🗓<span>';
-			} else {
-				if (d['seminar_link']!='') {
-					html_text+='<span class="calendar-event"> / Add this <a href="seminar_event_'+d['seminar_id']+'.ics">event</a> to your 🗓<span>';
+				if (d['seminar_link'].includes('mailto:')) {
+					html_text+='<span class="calendar-event">Add this <a href="https://www.worldwideneuro.com/individual_calendar_events/seminar_event_'+d['seminar_id']+'.ics">event</a> to your 🗓<span>';
 				} else {
-					html_text+='<span class="calendar-event">Add this <a href="seminar_event_'+d['seminar_id']+'.ics">event</a> to your 🗓<span>';
+					if (d['seminar_link']!='') {
+						html_text+='<span class="calendar-event"> / Add this <a href="https://www.worldwideneuro.com/individual_calendar_events/seminar_event_'+d['seminar_id']+'.ics">event</a> to your 🗓<span>';
+					} else {
+						html_text+='<span class="calendar-event">Add this <a href="a href="https://www.worldwideneuro.com/individual_calendar_events/seminar_event_'+d['seminar_id']+'.ics">event</a> to your 🗓<span>';
+					}
 				}
 			}
 
@@ -1293,6 +1488,8 @@ const request_data = async () => {
 
 		if (d['speaker_website']!=''){
 
+			html_text+='<ul class="speaker-links" style="padding-left:0"><li>';
+
 			var website_link=d['speaker_website'];
 			website_link=website_link.replace('http://','')
 			website_link=website_link.replace('https://','')
@@ -1300,12 +1497,12 @@ const request_data = async () => {
 
 			if (d['speaker_twitter']!=''){
 
-				html_text+='<ul class="speaker-links"><li>';
+				
 				html_text+=twitter_svg();
 				html_text+='<a href="https://twitter.com/'+d['speaker_twitter'].substr(1)+'">'+d['speaker_twitter']+'</a>  ' ;
-				html_text+=' 🌐<a href="'+d['speaker_website']+'">'+website_link+'</a></li></ul>' ;
+				html_text+=' 🌐 <a href="'+d['speaker_website']+'">'+website_link+'</a></li></ul>' ;
 			} else {
-				html_text+=' 🌐<a href="'+d['speaker_website']+'">'+website_link+'</a>' ;
+				html_text+='🌐 <a href="'+d['speaker_website']+'">'+website_link+'</a></li></ul>' ;
 			}
 
 		}
@@ -1315,20 +1512,23 @@ const request_data = async () => {
 			html_text+='<a style="color:#3096e0;" href="https://www.worldwideneuro.com/seminar-event.html?id=';
 			html_text+=d['seminar_id']+'">↗ ' + d['seminar_title'] + '</a>';
 
-			let this_intent='https://twitter.com/intent/tweet?text=';		
-			this_intent+='Online Seminar: ' + d['speaker_title'] + ' ' + d['seminar_speaker'] + ' ';
-			try {
-				this_intent+=d['speaker_twitter'] +' ';
-			} catch {}
-			this_intent+=' – "' + d['seminar_title'] +'" | ' + d['seminar_date'] + ' via @worldwideneuro';
-			this_intent+='&url=https://www.worldwideneuro.com/seminar-event.html?id='+d['seminar_id'];
-			
-			this_intent=encodeURI(this_intent);
+			if (d['hosted_by']!='conference'){
 
-			html_text+='<span style="white-space:pre;">  </span>';
+				let this_intent='https://twitter.com/intent/tweet?text=';		
+				this_intent+='Online Seminar: ' + d['speaker_title'] + ' ' + d['seminar_speaker'] + ' ';
+				try {
+					this_intent+=d['speaker_twitter'] +' ';
+				} catch {}
+				this_intent+=' – "' + d['seminar_title'] +'" | ' + d['seminar_date'] + ' via @worldwideneuro';
+				this_intent+='&url=https://www.worldwideneuro.com/seminar-event.html?id='+d['seminar_id'];
+				
+				this_intent=encodeURI(this_intent);
 
-			html_text+='<a href="'+this_intent+'">';	
-			html_text+='<img class="share-on-twitter" src="tweet_button.png"/></a>'
+				html_text+='<span style="white-space:pre;">  </span>';
+
+				html_text+='<a href="'+this_intent+'">';	
+				html_text+='<img class="share-on-twitter" src="tweet_button.png"/></a>'
+			}
 
  			html_text+='</p>' ;
 		}
@@ -1338,10 +1538,13 @@ const request_data = async () => {
 			html_text+='<div class="seminar-abstract">' + abstract_text  + '</div>';
 		}
 
-		if (d['topic_tags']!=''){
-			let topic_tags=get_split_trim(d['topic_tags']);
-			topic_tags=topic_tags.map(d => '<div class="seminar-tags" style="background-color:'+topic_tags_to_colors[d]+';">'+d+'</div>');
-			let seminar_series_tags=get_split_trim(d['hosted_by']);
+		let topic_tags=get_split_trim(d['topic_tags']);
+		topic_tags=topic_tags.map(d => '<div class="seminar-tags" style="background-color:'+topic_tags_to_colors[d]+';">'+d+'</div>');
+
+		let seminar_series_tags;
+
+		if (d['hosted_by']!='Ad hoc') {
+			seminar_series_tags=get_split_trim(d['hosted_by']);
 			seminar_series_tags=seminar_series_tags.map(d => { 
 				let seminar_tag=d;
 				let seminar_tag_href=seminar_tag.replace(/ /g,'_') ;
@@ -1352,13 +1555,18 @@ const request_data = async () => {
 				seminar_tag_html_text+=seminar_series_tags_to_colors[seminar_tag] ;
 				seminar_tag_html_text+=';">hosted by <i>'+seminar_tag+'</i></div></a>' ;
 
+
+
 				return seminar_tag_html_text ;
 			});
-			html_text+='<p class="seminar-tags-container">';
-			html_text+=topic_tags.join(' ');
-			html_text+=seminar_series_tags.join(' ');
-			html_text+='</p>';
+		} else {
+			seminar_series_tags=['<div class="seminar-tags" style="background-color:#909090"><i>one-off event</i></div>'] ;
 		}
+
+		//html_text+='<p class="seminar-tags-container">';
+		html_text+=topic_tags.join(' ');
+		html_text+=seminar_series_tags.join(' ');
+		//html_text+='</p>';
 
 		html_text+='</header>' ;
 		
@@ -1448,8 +1656,17 @@ const request_data = async () => {
 	}
 
 	function get_time_difference_between_two_seminar_times(d1,d2){
-		let moment_object_d1=parse_seminar_date_time(d1);
-		let moment_object_d2=parse_seminar_date_time(d2);
+		let moment_object_d1,moment_object_d2
+		if (d1['date_label']!== undefined) {
+			moment_object_d1=d1['date_moment'];
+		} else {
+			moment_object_d1=parse_seminar_date_time(d1);
+		}
+		if (d2['date_label']!== undefined) {
+			moment_object_d1=d2['date_moment'];
+		} else {
+			moment_object_d2=parse_seminar_date_time(d2);
+		}
 		return get_moment_difference(moment_object_d1,moment_object_d2);
 	}
 
@@ -1489,20 +1706,20 @@ const request_data = async () => {
 	function format_host(d) {
 
 		let this_host=d[0].trim();
-		let host_data=d[1];
+		let host_data=d[1]['Organized by'];
 		host_data=host_data.sort(function(a, b) {
-			a = a['host'].toUpperCase();
-			b = b['host'].toUpperCase();
+			a = a['text'].toUpperCase();
+			b = b['text'].toUpperCase();
 			return (a < b) ? -1 : (a > b) ? 1 : 0;
 		});
 
 		let html_text=`<li class="mt-1.5">
-			<svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600" viewbox="0 0 17 17">
-				<path class="fill-current" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z" />
-			</svg><span style="white-space:pre;">   </span>`;
+			<svg class="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0" style="color:#8c95a2;" viewbox="0 0 17 19">
+				<path class="fill-current" d="M18.2,14.2h-0.8c-0.1,0-0.2,0-0.3,0.1c-0.1,0.1-0.1,0.2-0.1,0.3v3.8c0,0.5-0.2,1-0.6,1.4	c-0.4,0.4-0.8,0.6-1.4,0.6h-10c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.8-0.6-1.4v-10c0-0.5,0.2-1,0.6-1.4c0.4-0.4,0.8-0.6,1.4-0.6h8.4	c0.1,0,0.2,0,0.3-0.1C14,6.4,14,6.3,14,6.2V5.4c0-0.1,0-0.2-0.1-0.3C13.8,5.1,13.8,5,13.6,5H5.2c-1,0-1.8,0.3-2.4,1	c-0.7,0.7-1,1.5-1,2.4v10c0,1,0.3,1.8,1,2.4c0.7,0.7,1.5,1,2.4,1h10c1,0,1.8-0.3,2.4-1c0.7-0.7,1-1.5,1-2.4v-3.8 c0-0.1,0-0.2-0.1-0.3C18.4,14.3,18.3,14.2,18.2,14.2z M23,3.7c-0.2-0.2-0.3-0.2-0.5-0.2h-6.1c-0.2,0-0.4,0.1-0.5,0.2 c-0.2,0.2-0.2,0.3-0.2,0.5s0.1,0.4,0.2,0.5l2.1,2.1l-7.8,7.8C10,14.8,10,14.9,10,15c0,0.1,0,0.2,0.1,0.3l1.4,1.4 c0.1,0.1,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1l7.8-7.8l2.1,2.1c0.2,0.2,0.3,0.2,0.5,0.2c0.2,0,0.4-0.1,0.5-0.2 c0.2-0.2,0.2-0.3,0.2-0.5V4.3C23.2,4.1,23.1,3.9,23,3.7z"/>
+			</svg><span style="white-space:pre;">  </span>`;
 
 		let bool = actually_used_seminar_series_tags.includes(this_host);
-		
+
 		html_text+=(bool) ? '<a href="https://www.worldwideneuro.com/seminar-series.html?name=' +this_host.replace(/ /g,'_') + '">' : '' ;
 		
 		html_text+='<div class="seminar-series-hosts-tags"';
@@ -1513,7 +1730,7 @@ const request_data = async () => {
 
 		let host_data_html=host_data.map(d => {
 			let html_txt='<a style="white-space:pre;font-size:1.1rem;" href="';
-			html_txt+=d['host link']+'"> ' + d['host']+ '</a>';
+			html_txt+=d['url']+'"> ' + d['text']+ '</a>';
 			return html_txt;
 		});
 		host_data_html=host_data_html.join('<span> / </span>');
@@ -1523,7 +1740,7 @@ const request_data = async () => {
 	}
 
 	function twitter_svg() {
-		return '<svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 inline -ml-7 mr-1.5 -mt-0.8" viewbox="0 0 20 20"><path class="fill-current" style="color:#008dd6;" d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>';
+		return '<svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 inline mr-1.5 -mt-0.8" viewbox="0 0 20 20"><path class="fill-current" style="color:#008dd6;" d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>';
 	}
 
 	function create_calendar_view() {
@@ -1539,7 +1756,7 @@ const request_data = async () => {
 				let calendar_item = new Object();
 				calendar_item['dates']=date_object;
 				calendar_item['highlight']=true;
-				calendar_item['popover']={ 'label':parse_seminar_time(d)+' - '+d['speaker_title']+' '+d['seminar_speaker'],'visibility': 'hover' };
+				calendar_item['popover']={ 'label':parse_seminar_time(d)+' - '+d['speaker_title']+' '+d['seminar_speaker'] + ' ➡️ "' +d['seminar_title']+'"','visibility': 'hover' };
 				calendar_attributes.push(calendar_item);
 
 				/*seminar_series.forEach( seminar_series_item => {
@@ -1586,28 +1803,45 @@ const request_data = async () => {
 		Object.values(data).forEach(d => {
 			if(d['topic_tags']!=''){
 				try {
-					get_split_trim(d['topic_tags']).map(i => { if (!topic_tags.includes(i)){topic_tags.push(i);}});
+					get_split_trim(d['topic_tags']).map(i => { 
+						topic_tags.push(i);
+						if (!topic_tags.includes(i)){
+							topic_tags.push(i);
+						}
+					});
 				} catch {}
 			}
 		});
-		topic_tags=array_move(topic_tags,topic_tags.indexOf('neurotheory'),0)
+
+		let topic_tags_count=new Object();
+		topic_tags.forEach( d => {
+				topic_tags_count[d] = topic_tags_count[d]? ++ topic_tags_count[d]: 1;
+			});
+
+		let allowed_topic_tags=topic_tags.filter(onlyUnique).filter(d => topic_tags_count[d]>2 && d!='Spanish 🗣️');
+
+		allowed_topic_tags=allowed_topic_tags.sort(function(a, b) {
+			return topic_tags_count[b] - topic_tags_count[a]
+		});
+
+		allowed_topic_tags.unshift('Spanish 🗣️');
+		allowed_topic_tags.unshift('all');
 		
 		let topic_tags_to_colors = new Object() ;
 
-		let step = Math.floor( topic_colors.length / topic_tags.length ) ;
+		let step = topic_colors.length / allowed_topic_tags.length ;
 
-		for(i=0; i<topic_tags.length; i++){
-
-			if (topic_tags[i]!='all') {
-				topic_tags_to_colors[topic_tags[i]]=topic_colors[i*step];
-			}
-
+		for(i=0; i<allowed_topic_tags.length; i++){
+			topic_tags_to_colors[allowed_topic_tags[i]]=topic_colors[Math.floor(i*step)];
 		}
-
-		topic_tags.unshift('all');
+		topics_not_yet_assigned_w_color=topic_tags.filter(onlyUnique).filter(d=> !(allowed_topic_tags.includes(d)));
+		
+		topics_not_yet_assigned_w_color.forEach(d => topic_tags_to_colors[d]='#13b2a8');
+		
 		topic_tags_to_colors['all']='#c9c9c9';
+		topic_tags_to_colors['Spanish 🗣️']='#ff8e75';
 
-		return [topic_tags,topic_tags_to_colors];
+		return [allowed_topic_tags,topic_tags_to_colors];
 
 	}
 
@@ -1622,7 +1856,7 @@ const request_data = async () => {
 			}
 			try {
 				get_split_trim(d).map(i => {
-					if (!seminar_series_tags.includes(i)){		
+					if (!seminar_series_tags.includes(i)){
 						seminar_series_tags.push(i);
 					}
 				});
@@ -1644,17 +1878,8 @@ const request_data = async () => {
 			seminar_series_tags_to_colors[seminar_series_tags[i]]=seminar_series_colors[i*step];
 		}
 
-		let actually_used_seminar_series_tags=[];
-		Object.values(data).forEach(d => {
-			d=d['hosted_by'];
-			try {
-				get_split_trim(d).map(i => {
-					if (!actually_used_seminar_series_tags.includes(i)) {actually_used_seminar_series_tags.push(i);
-					}
-				});
-			} catch {}
-		});
-		actually_used_seminar_series_tags = actually_used_seminar_series_tags.filter(onlyUnique);
+		let these_used_seminar_series_tags=Object.keys(seminar_hosts);
+		let actually_used_seminar_series_tags = these_used_seminar_series_tags.filter( d => seminar_hosts[d]['active'] && d!=='Ad hoc' );
 		actually_used_seminar_series_tags = actually_used_seminar_series_tags.sort(function(a, b) {
 			a = a.toUpperCase();
 			b = b.toUpperCase();
@@ -1757,6 +1982,10 @@ const request_data = async () => {
 			return d.toString() + ' ' + f;
 		}
 
+	}
+
+	function hasWhiteSpace(s) {
+		return s.indexOf(' ') >= 0;
 	}
 
 	function check_browser() {

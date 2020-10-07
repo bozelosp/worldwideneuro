@@ -5,7 +5,7 @@
   
   <p align="center">
 </p>
-  <a href="https://worldwideneuro.com"><img src="website_preview.jpg" width=850></a>
+  <a href="https://www.worldwideneuro.com"><img src="website_preview.jpg" width=850></a>
   <br/><br/>
   <p>
     <strong>Scientific seminars from all over the world</strong>
